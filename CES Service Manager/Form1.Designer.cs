@@ -55,14 +55,31 @@
             this.navBarItem9 = new DevExpress.XtraNavBar.NavBarItem();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
+            this.panelControl3.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -186,6 +203,7 @@
             this.navBarItem1.Caption = "JENKINS";
             this.navBarItem1.Name = "navBarItem1";
             this.navBarItem1.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarItem1.SmallImage")));
+            this.navBarItem1.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.Jenkins_Clicked);
             // 
             // navBarItem2
             // 
@@ -251,10 +269,42 @@
             // 
             // panelControl3
             // 
+            this.panelControl3.Controls.Add(this.panel4);
+            this.panelControl3.Controls.Add(this.panel3);
+            this.panelControl3.Controls.Add(this.panel2);
+            this.panelControl3.Controls.Add(this.panel1);
             this.panelControl3.Location = new System.Drawing.Point(0, 150);
             this.panelControl3.Name = "panelControl3";
             this.panelControl3.Size = new System.Drawing.Size(1184, 90);
             this.panelControl3.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.Controls.Add(this.labelControl2);
+            this.panel1.Controls.Add(this.labelControl1);
+            this.panel1.Location = new System.Drawing.Point(5, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 80);
+            this.panel1.TabIndex = 1;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.BackColor = System.Drawing.Color.Chocolate;
+            this.labelControl2.Location = new System.Drawing.Point(3, 3);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(104, 13);
+            this.labelControl2.TabIndex = 2;
+            this.labelControl2.Text = "Jenkins Jobs Number:";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelControl1.Location = new System.Drawing.Point(37, 20);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(105, 39);
+            this.labelControl1.TabIndex = 1;
+            this.labelControl1.Text = "65374";
             // 
             // panelControl4
             // 
@@ -262,6 +312,90 @@
             this.panelControl4.Name = "panelControl4";
             this.panelControl4.Size = new System.Drawing.Size(1184, 28);
             this.panelControl4.TabIndex = 3;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.panel2.Controls.Add(this.labelControl3);
+            this.panel2.Controls.Add(this.labelControl4);
+            this.panel2.Location = new System.Drawing.Point(417, 5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 80);
+            this.panel2.TabIndex = 2;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.BackColor = System.Drawing.Color.Chocolate;
+            this.labelControl3.Location = new System.Drawing.Point(3, 3);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(98, 13);
+            this.labelControl3.TabIndex = 2;
+            this.labelControl3.Text = "Artifactory Projects:";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelControl4.Location = new System.Drawing.Point(52, 20);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(87, 39);
+            this.labelControl4.TabIndex = 1;
+            this.labelControl4.Text = "4567";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Olive;
+            this.panel3.Controls.Add(this.labelControl5);
+            this.panel3.Controls.Add(this.labelControl6);
+            this.panel3.Location = new System.Drawing.Point(211, 5);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 80);
+            this.panel3.TabIndex = 3;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.BackColor = System.Drawing.Color.Chocolate;
+            this.labelControl5.Location = new System.Drawing.Point(3, 3);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(76, 13);
+            this.labelControl5.TabIndex = 2;
+            this.labelControl5.Text = "GitLab Projects:";
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelControl6.Location = new System.Drawing.Point(55, 22);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(85, 39);
+            this.labelControl6.TabIndex = 1;
+            this.labelControl6.Text = "7886";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Chocolate;
+            this.panel4.Controls.Add(this.labelControl7);
+            this.panel4.Controls.Add(this.labelControl8);
+            this.panel4.Location = new System.Drawing.Point(623, 5);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 80);
+            this.panel4.TabIndex = 4;
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.BackColor = System.Drawing.Color.Chocolate;
+            this.labelControl7.Location = new System.Drawing.Point(3, 3);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(74, 13);
+            this.labelControl7.TabIndex = 2;
+            this.labelControl7.Text = "Sonar Projects:";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelControl8.Location = new System.Drawing.Point(57, 22);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(87, 39);
+            this.labelControl8.TabIndex = 1;
+            this.labelControl8.Text = "6537";
             // 
             // Form1
             // 
@@ -275,13 +409,23 @@
             this.Controls.Add(this.ribbonControl1);
             this.Name = "Form1";
             this.Text = "CES Service Manager";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
+            this.panelControl3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,6 +459,18 @@
         private DevExpress.XtraNavBar.NavBarItem navBarItem8;
         private DevExpress.XtraNavBar.NavBarItem navBarItem9;
         private DevExpress.XtraEditors.PanelControl panelControl4;
+        private System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private System.Windows.Forms.Panel panel4;
+        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private System.Windows.Forms.Panel panel3;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private System.Windows.Forms.Panel panel2;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
     }
 }
 

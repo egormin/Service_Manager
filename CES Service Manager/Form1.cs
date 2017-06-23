@@ -15,5 +15,15 @@ namespace CES_Service_Manager
         {
             InitializeComponent();    
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void Jenkins_Clicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            MessageBox.Show("dawdwqd");
+        }
     }
 }

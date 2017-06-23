@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -54,12 +55,14 @@
             this.navBarItem9 = new DevExpress.XtraNavBar.NavBarItem();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -139,7 +142,7 @@
             this.panelControl1.Controls.Add(this.navBarControl1);
             this.panelControl1.Location = new System.Drawing.Point(0, 246);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(200, 564);
+            this.panelControl1.Size = new System.Drawing.Size(200, 550);
             this.panelControl1.TabIndex = 1;
             // 
             // navBarControl1
@@ -161,7 +164,7 @@
             this.navBarControl1.Location = new System.Drawing.Point(0, 0);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 200;
-            this.navBarControl1.Size = new System.Drawing.Size(200, 564);
+            this.navBarControl1.Size = new System.Drawing.Size(200, 550);
             this.navBarControl1.TabIndex = 0;
             this.navBarControl1.Text = "navBarControl1";
             // 
@@ -182,31 +185,37 @@
             // 
             this.navBarItem1.Caption = "JENKINS";
             this.navBarItem1.Name = "navBarItem1";
+            this.navBarItem1.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarItem1.SmallImage")));
             // 
             // navBarItem2
             // 
             this.navBarItem2.Caption = "GITLAB";
             this.navBarItem2.Name = "navBarItem2";
+            this.navBarItem2.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarItem2.SmallImage")));
             // 
             // navBarItem3
             // 
             this.navBarItem3.Caption = "SONAR";
             this.navBarItem3.Name = "navBarItem3";
+            this.navBarItem3.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarItem3.SmallImage")));
             // 
             // navBarItem4
             // 
             this.navBarItem4.Caption = "CRUCIBLE";
             this.navBarItem4.Name = "navBarItem4";
+            this.navBarItem4.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarItem4.SmallImage")));
             // 
             // navBarItem5
             // 
             this.navBarItem5.Caption = "ARTIFACTORY";
             this.navBarItem5.Name = "navBarItem5";
+            this.navBarItem5.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarItem5.SmallImage")));
             // 
             // navBarItem6
             // 
             this.navBarItem6.Caption = "SVN";
             this.navBarItem6.Name = "navBarItem6";
+            this.navBarItem6.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarItem6.SmallImage")));
             // 
             // navBarGroup2
             // 
@@ -237,7 +246,7 @@
             // 
             this.panelControl2.Location = new System.Drawing.Point(206, 246);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(978, 564);
+            this.panelControl2.Size = new System.Drawing.Size(978, 550);
             this.panelControl2.TabIndex = 2;
             // 
             // panelControl3
@@ -247,11 +256,19 @@
             this.panelControl3.Size = new System.Drawing.Size(1184, 90);
             this.panelControl3.TabIndex = 2;
             // 
+            // panelControl4
+            // 
+            this.panelControl4.Location = new System.Drawing.Point(0, 802);
+            this.panelControl4.Name = "panelControl4";
+            this.panelControl4.Size = new System.Drawing.Size(1184, 28);
+            this.panelControl4.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 811);
+            this.ClientSize = new System.Drawing.Size(1184, 835);
+            this.Controls.Add(this.panelControl4);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
@@ -264,6 +281,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,6 +314,7 @@
         private DevExpress.XtraNavBar.NavBarItem navBarItem7;
         private DevExpress.XtraNavBar.NavBarItem navBarItem8;
         private DevExpress.XtraNavBar.NavBarItem navBarItem9;
+        private DevExpress.XtraEditors.PanelControl panelControl4;
     }
 }
 

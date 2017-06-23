@@ -49,3 +49,4 @@ D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES Service Manager.exe.licenses
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES Service Manager.exe
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES Service Manager.pdb
+D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES Service Manager.csprojResolveAssemblyReference.cache

@@ -23,7 +23,7 @@ namespace CES_Service_Manager
 
         private void Jenkins_Clicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
-            MessageBox.Show("dawdwqd");
+            panel5.Visible = true;
         }
     }
 }

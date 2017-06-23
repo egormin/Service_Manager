@@ -68,11 +68,13 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -157,9 +159,9 @@
             // panelControl1
             // 
             this.panelControl1.Controls.Add(this.navBarControl1);
-            this.panelControl1.Location = new System.Drawing.Point(0, 246);
+            this.panelControl1.Location = new System.Drawing.Point(0, 229);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(200, 550);
+            this.panelControl1.Size = new System.Drawing.Size(200, 567);
             this.panelControl1.TabIndex = 1;
             // 
             // navBarControl1
@@ -181,7 +183,7 @@
             this.navBarControl1.Location = new System.Drawing.Point(0, 0);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 200;
-            this.navBarControl1.Size = new System.Drawing.Size(200, 550);
+            this.navBarControl1.Size = new System.Drawing.Size(200, 567);
             this.navBarControl1.TabIndex = 0;
             this.navBarControl1.Text = "navBarControl1";
             // 
@@ -262,9 +264,10 @@
             // 
             // panelControl2
             // 
-            this.panelControl2.Location = new System.Drawing.Point(206, 246);
+            this.panelControl2.Controls.Add(this.panel5);
+            this.panelControl2.Location = new System.Drawing.Point(206, 229);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(978, 550);
+            this.panelControl2.Size = new System.Drawing.Size(973, 567);
             this.panelControl2.TabIndex = 2;
             // 
             // panelControl3
@@ -275,7 +278,7 @@
             this.panelControl3.Controls.Add(this.panel1);
             this.panelControl3.Location = new System.Drawing.Point(0, 150);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(1184, 90);
+            this.panelControl3.Size = new System.Drawing.Size(1179, 73);
             this.panelControl3.TabIndex = 2;
             // 
             // panel1
@@ -285,7 +288,7 @@
             this.panel1.Controls.Add(this.labelControl1);
             this.panel1.Location = new System.Drawing.Point(5, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 80);
+            this.panel1.Size = new System.Drawing.Size(200, 60);
             this.panel1.TabIndex = 1;
             // 
             // labelControl2
@@ -300,7 +303,7 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelControl1.Location = new System.Drawing.Point(37, 20);
+            this.labelControl1.Location = new System.Drawing.Point(38, 16);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(105, 39);
             this.labelControl1.TabIndex = 1;
@@ -310,7 +313,7 @@
             // 
             this.panelControl4.Location = new System.Drawing.Point(0, 802);
             this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(1184, 28);
+            this.panelControl4.Size = new System.Drawing.Size(1179, 28);
             this.panelControl4.TabIndex = 3;
             // 
             // panel2
@@ -320,7 +323,7 @@
             this.panel2.Controls.Add(this.labelControl4);
             this.panel2.Location = new System.Drawing.Point(417, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 80);
+            this.panel2.Size = new System.Drawing.Size(200, 60);
             this.panel2.TabIndex = 2;
             // 
             // labelControl3
@@ -335,7 +338,7 @@
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelControl4.Location = new System.Drawing.Point(52, 20);
+            this.labelControl4.Location = new System.Drawing.Point(55, 16);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(87, 39);
             this.labelControl4.TabIndex = 1;
@@ -348,7 +351,7 @@
             this.panel3.Controls.Add(this.labelControl6);
             this.panel3.Location = new System.Drawing.Point(211, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 80);
+            this.panel3.Size = new System.Drawing.Size(200, 60);
             this.panel3.TabIndex = 3;
             // 
             // labelControl5
@@ -363,7 +366,7 @@
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelControl6.Location = new System.Drawing.Point(55, 22);
+            this.labelControl6.Location = new System.Drawing.Point(54, 16);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(85, 39);
             this.labelControl6.TabIndex = 1;
@@ -376,7 +379,7 @@
             this.panel4.Controls.Add(this.labelControl8);
             this.panel4.Location = new System.Drawing.Point(623, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 80);
+            this.panel4.Size = new System.Drawing.Size(200, 60);
             this.panel4.TabIndex = 4;
             // 
             // labelControl7
@@ -391,11 +394,20 @@
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelControl8.Location = new System.Drawing.Point(57, 22);
+            this.labelControl8.Location = new System.Drawing.Point(56, 16);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(87, 39);
             this.labelControl8.TabIndex = 1;
             this.labelControl8.Text = "6537";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(973, 567);
+            this.panel5.TabIndex = 0;
+            this.panel5.Visible = false;
             // 
             // Form1
             // 
@@ -415,6 +427,7 @@
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -471,6 +484,7 @@
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl4;
+        private System.Windows.Forms.Panel panel5;
     }
 }
 

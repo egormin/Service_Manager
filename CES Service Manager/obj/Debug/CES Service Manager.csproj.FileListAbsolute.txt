@@ -50,3 +50,9 @@ D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES Service Manager.exe
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES Service Manager.pdb
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES Service Manager.csprojResolveAssemblyReference.cache
+D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\DevExpress.XtraNavBar.v16.1.dll
+D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\DevExpress.XtraNavBar.v16.1.xml
+D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\de\DevExpress.XtraNavBar.v16.1.resources.dll
+D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\es\DevExpress.XtraNavBar.v16.1.resources.dll
+D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\ja\DevExpress.XtraNavBar.v16.1.resources.dll
+D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\ru\DevExpress.XtraNavBar.v16.1.resources.dll

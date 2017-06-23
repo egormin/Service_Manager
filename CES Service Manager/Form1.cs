@@ -13,7 +13,7 @@ namespace CES_Service_Manager
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();    
         }
     }
 }

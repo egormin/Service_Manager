@@ -34,9 +34,20 @@
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonGroup2 = new DevExpress.XtraBars.BarButtonGroup();
+            this.barButton_Help = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonGroup3 = new DevExpress.XtraBars.BarButtonGroup();
+            this.barButton_About = new DevExpress.XtraBars.BarButtonItem();
+            this.barButton_UserSettings = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem_ServerSettings = new DevExpress.XtraBars.BarButtonItem();
             this.Top_Menu_File = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.Top_Menu_Settings = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup_Settings = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.Top_Menu_About = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup_About_Info = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup_About_Help = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
@@ -68,17 +79,9 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.Top_Menu_About = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonGroup2 = new DevExpress.XtraBars.BarButtonGroup();
-            this.barButton_Help = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonGroup3 = new DevExpress.XtraBars.BarButtonGroup();
             this.ribbonPageGroup_About = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.galleryDropDown1 = new DevExpress.XtraBars.Ribbon.GalleryDropDown(this.components);
-            this.ribbonPageGroup_About_Info = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup_About_Help = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButton_About = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -108,9 +111,11 @@
             this.barButtonGroup2,
             this.barButton_Help,
             this.barButtonGroup3,
-            this.barButton_About});
+            this.barButton_About,
+            this.barButton_UserSettings,
+            this.barButtonItem_ServerSettings});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 13;
+            this.ribbonControl1.MaxItemId = 15;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.Top_Menu_File,
@@ -139,6 +144,60 @@
             this.barButtonItem2.Id = 3;
             this.barButtonItem2.Name = "barButtonItem2";
             // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "barButtonItem4";
+            this.barButtonItem4.Id = 8;
+            this.barButtonItem4.Name = "barButtonItem4";
+            // 
+            // barButtonGroup2
+            // 
+            this.barButtonGroup2.Caption = "barButtonGroup2";
+            this.barButtonGroup2.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.barButtonGroup2.Id = 9;
+            this.barButtonGroup2.Name = "barButtonGroup2";
+            // 
+            // barButton_Help
+            // 
+            this.barButton_Help.Caption = "Help";
+            this.barButton_Help.Glyph = ((System.Drawing.Image)(resources.GetObject("barButton_Help.Glyph")));
+            this.barButton_Help.Id = 10;
+            this.barButton_Help.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButton_Help.LargeGlyph")));
+            this.barButton_Help.Name = "barButton_Help";
+            // 
+            // barButtonGroup3
+            // 
+            this.barButtonGroup3.Caption = "barButtonGroup3";
+            this.barButtonGroup3.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.barButtonGroup3.Id = 11;
+            this.barButtonGroup3.Name = "barButtonGroup3";
+            // 
+            // barButton_About
+            // 
+            this.barButton_About.Caption = "About";
+            this.barButton_About.Glyph = ((System.Drawing.Image)(resources.GetObject("barButton_About.Glyph")));
+            this.barButton_About.Id = 12;
+            this.barButton_About.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButton_About.LargeGlyph")));
+            this.barButton_About.Name = "barButton_About";
+            this.barButton_About.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButton_About_ItemClick);
+            // 
+            // barButton_UserSettings
+            // 
+            this.barButton_UserSettings.Caption = "User Settings";
+            this.barButton_UserSettings.Glyph = ((System.Drawing.Image)(resources.GetObject("barButton_UserSettings.Glyph")));
+            this.barButton_UserSettings.Id = 13;
+            this.barButton_UserSettings.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButton_UserSettings.LargeGlyph")));
+            this.barButton_UserSettings.Name = "barButton_UserSettings";
+            // 
+            // barButtonItem_ServerSettings
+            // 
+            this.barButtonItem_ServerSettings.Caption = "Server Settings";
+            this.barButtonItem_ServerSettings.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem_ServerSettings.Glyph")));
+            this.barButtonItem_ServerSettings.Id = 14;
+            this.barButtonItem_ServerSettings.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem_ServerSettings.LargeGlyph")));
+            this.barButtonItem_ServerSettings.Name = "barButtonItem_ServerSettings";
+            this.barButtonItem_ServerSettings.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem_ServerSettings_ItemClick);
+            // 
             // Top_Menu_File
             // 
             this.Top_Menu_File.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -153,8 +212,39 @@
             // 
             // Top_Menu_Settings
             // 
+            this.Top_Menu_Settings.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup_Settings});
             this.Top_Menu_Settings.Name = "Top_Menu_Settings";
             this.Top_Menu_Settings.Text = "Settings";
+            // 
+            // ribbonPageGroup_Settings
+            // 
+            this.ribbonPageGroup_Settings.ItemLinks.Add(this.barButton_UserSettings);
+            this.ribbonPageGroup_Settings.ItemLinks.Add(this.barButtonItem_ServerSettings);
+            this.ribbonPageGroup_Settings.Name = "ribbonPageGroup_Settings";
+            this.ribbonPageGroup_Settings.Text = "Server Settings";
+            // 
+            // Top_Menu_About
+            // 
+            this.Top_Menu_About.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup_About_Info,
+            this.ribbonPageGroup_About_Help});
+            this.Top_Menu_About.Name = "Top_Menu_About";
+            this.Top_Menu_About.Text = "About";
+            // 
+            // ribbonPageGroup_About_Info
+            // 
+            this.ribbonPageGroup_About_Info.AllowTextClipping = false;
+            this.ribbonPageGroup_About_Info.ItemLinks.Add(this.barButton_About);
+            this.ribbonPageGroup_About_Info.Name = "ribbonPageGroup_About_Info";
+            this.ribbonPageGroup_About_Info.Text = "About CSM";
+            // 
+            // ribbonPageGroup_About_Help
+            // 
+            this.ribbonPageGroup_About_Help.AllowTextClipping = false;
+            this.ribbonPageGroup_About_Help.ItemLinks.Add(this.barButton_Help);
+            this.ribbonPageGroup_About_Help.Name = "ribbonPageGroup_About_Help";
+            this.ribbonPageGroup_About_Help.Text = "Help Information";
             // 
             // defaultLookAndFeel1
             // 
@@ -423,42 +513,6 @@
             this.panelControl4.Size = new System.Drawing.Size(1179, 28);
             this.panelControl4.TabIndex = 3;
             // 
-            // Top_Menu_About
-            // 
-            this.Top_Menu_About.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup_About_Info,
-            this.ribbonPageGroup_About_Help});
-            this.Top_Menu_About.Name = "Top_Menu_About";
-            this.Top_Menu_About.Text = "About";
-            // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "barButtonItem4";
-            this.barButtonItem4.Id = 8;
-            this.barButtonItem4.Name = "barButtonItem4";
-            // 
-            // barButtonGroup2
-            // 
-            this.barButtonGroup2.Caption = "barButtonGroup2";
-            this.barButtonGroup2.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.barButtonGroup2.Id = 9;
-            this.barButtonGroup2.Name = "barButtonGroup2";
-            // 
-            // barButton_Help
-            // 
-            this.barButton_Help.Caption = "Help";
-            this.barButton_Help.Glyph = ((System.Drawing.Image)(resources.GetObject("barButton_Help.Glyph")));
-            this.barButton_Help.Id = 10;
-            this.barButton_Help.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButton_Help.LargeGlyph")));
-            this.barButton_Help.Name = "barButton_Help";
-            // 
-            // barButtonGroup3
-            // 
-            this.barButtonGroup3.Caption = "barButtonGroup3";
-            this.barButtonGroup3.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.barButtonGroup3.Id = 11;
-            this.barButtonGroup3.Name = "barButtonGroup3";
-            // 
             // ribbonPageGroup_About
             // 
             this.ribbonPageGroup_About.ItemLinks.Add(this.barButton_Help);
@@ -474,29 +528,6 @@
             // 
             this.galleryDropDown1.Name = "galleryDropDown1";
             this.galleryDropDown1.Ribbon = this.ribbonControl1;
-            // 
-            // ribbonPageGroup_About_Info
-            // 
-            this.ribbonPageGroup_About_Info.AllowTextClipping = false;
-            this.ribbonPageGroup_About_Info.ItemLinks.Add(this.barButton_About);
-            this.ribbonPageGroup_About_Info.Name = "ribbonPageGroup_About_Info";
-            this.ribbonPageGroup_About_Info.Text = "About CSM";
-            // 
-            // ribbonPageGroup_About_Help
-            // 
-            this.ribbonPageGroup_About_Help.AllowTextClipping = false;
-            this.ribbonPageGroup_About_Help.ItemLinks.Add(this.barButton_Help);
-            this.ribbonPageGroup_About_Help.Name = "ribbonPageGroup_About_Help";
-            this.ribbonPageGroup_About_Help.Text = "Help Information";
-            // 
-            // barButton_About
-            // 
-            this.barButton_About.Caption = "About";
-            this.barButton_About.Glyph = ((System.Drawing.Image)(resources.GetObject("barButton_About.Glyph")));
-            this.barButton_About.Id = 12;
-            this.barButton_About.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButton_About.LargeGlyph")));
-            this.barButton_About.Name = "barButton_About";
-            this.barButton_About.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButton_About_ItemClick);
             // 
             // Form1
             // 
@@ -587,6 +618,9 @@
         private DevExpress.XtraBars.BarButtonItem barButton_About;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup_About_Info;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup_About_Help;
+        private DevExpress.XtraBars.BarButtonItem barButton_UserSettings;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem_ServerSettings;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup_Settings;
     }
 }
 

@@ -96,3 +96,5 @@ D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\es\DevExpress.Office.v16.1.Core.resources.dll
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\ja\DevExpress.Office.v16.1.Core.resources.dll
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\ru\DevExpress.Office.v16.1.Core.resources.dll
+D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES_Service_Manager.Form_Settings.resources
+D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\Renci.SshNet.dll

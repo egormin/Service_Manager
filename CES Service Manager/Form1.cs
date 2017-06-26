@@ -35,5 +35,13 @@ namespace CES_Service_Manager
         {
             MessageBox.Show("CES Service Manager v. 1.0. Designed by Egor");
         }
+
+        private Form_Settings frm_Settings;
+        private void barButtonItem_ServerSettings_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+           
+        frm_Settings = new Form_Settings();
+            frm_Settings.ShowDialog();
+        }
     }
 }

@@ -25,5 +25,15 @@ namespace CES_Service_Manager
         {
             panel5.Visible = true;
         }
+
+        private void barButtonItem_About_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            MessageBox.Show("made by Egor");
+        }
+
+        private void barButton_About_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            MessageBox.Show("CES Service Manager v. 1.0. Designed by Egor");
+        }
     }
 }

@@ -64,6 +64,9 @@
             this.navBarItem9 = new DevExpress.XtraNavBar.NavBarItem();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -219,8 +222,9 @@
             // 
             // ribbonPageGroup_Settings
             // 
-            this.ribbonPageGroup_Settings.ItemLinks.Add(this.barButton_UserSettings);
+            this.ribbonPageGroup_Settings.AllowTextClipping = false;
             this.ribbonPageGroup_Settings.ItemLinks.Add(this.barButtonItem_ServerSettings);
+            this.ribbonPageGroup_Settings.ItemLinks.Add(this.barButton_UserSettings);
             this.ribbonPageGroup_Settings.Name = "ribbonPageGroup_Settings";
             this.ribbonPageGroup_Settings.Text = "Server Settings";
             // 
@@ -367,6 +371,9 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel5.Controls.Add(this.simpleButton1);
+            this.panel5.Controls.Add(this.simpleButton3);
+            this.panel5.Controls.Add(this.simpleButton4);
             this.panel5.Controls.Add(this.flowLayoutPanel1);
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
@@ -374,11 +381,55 @@
             this.panel5.TabIndex = 0;
             this.panel5.Visible = false;
             // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.Blue;
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.Appearance.Options.UseForeColor = true;
+            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(38, 288);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(217, 68);
+            this.simpleButton1.TabIndex = 11;
+            this.simpleButton1.Text = "Show plugins";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click_1);
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.simpleButton3.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            this.simpleButton3.Appearance.Options.UseForeColor = true;
+            this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.simpleButton3.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.Image")));
+            this.simpleButton3.Location = new System.Drawing.Point(38, 194);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(217, 68);
+            this.simpleButton3.TabIndex = 10;
+            this.simpleButton3.Text = "Remove Project";
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.simpleButton4.Appearance.ForeColor = System.Drawing.Color.Lime;
+            this.simpleButton4.Appearance.Options.UseFont = true;
+            this.simpleButton4.Appearance.Options.UseForeColor = true;
+            this.simpleButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.simpleButton4.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.Image")));
+            this.simpleButton4.Location = new System.Drawing.Point(38, 97);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(217, 68);
+            this.simpleButton4.TabIndex = 9;
+            this.simpleButton4.Text = "Create Project";
+            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click_1);
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flowLayoutPanel1.BackgroundImage")));
             this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(8, 5);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(785, 15);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(168, 102);
             this.flowLayoutPanel1.TabIndex = 0;
@@ -621,6 +672,9 @@
         private DevExpress.XtraBars.BarButtonItem barButton_UserSettings;
         private DevExpress.XtraBars.BarButtonItem barButtonItem_ServerSettings;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup_Settings;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
     }
 }
 

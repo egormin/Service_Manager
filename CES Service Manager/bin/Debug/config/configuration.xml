@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RemoteServerConfiguration>
+  <IP>192.168.138.13</IP>
+  <Port>22</Port>
+  <User>egor</User>
+  <KeyPath>D:\keys\eg_priv_os.ppk</KeyPath>
+</RemoteServerConfiguration>

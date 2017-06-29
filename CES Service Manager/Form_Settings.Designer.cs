@@ -42,12 +42,15 @@
             this.labelControl_Settings_port = new DevExpress.XtraEditors.LabelControl();
             this.labelControl_Settings_user = new DevExpress.XtraEditors.LabelControl();
             this.textEdit_Settings_user = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl_Settings_result = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit_Settings_Wait = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_Settings_IP.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_Settings_pubKey.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit_Settings_NOK.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit_Settings_OK.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_Settings_port.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_Settings_user.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit_Settings_Wait.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // textEdit_Settings_IP
@@ -106,7 +109,7 @@
             // pictureEdit_Settings_NOK
             // 
             this.pictureEdit_Settings_NOK.EditValue = ((object)(resources.GetObject("pictureEdit_Settings_NOK.EditValue")));
-            this.pictureEdit_Settings_NOK.Location = new System.Drawing.Point(138, 237);
+            this.pictureEdit_Settings_NOK.Location = new System.Drawing.Point(12, 210);
             this.pictureEdit_Settings_NOK.Name = "pictureEdit_Settings_NOK";
             this.pictureEdit_Settings_NOK.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(133)))), ((int)(((byte)(133)))));
             this.pictureEdit_Settings_NOK.Properties.Appearance.Options.UseBackColor = true;
@@ -120,7 +123,7 @@
             // pictureEdit_Settings_OK
             // 
             this.pictureEdit_Settings_OK.EditValue = ((object)(resources.GetObject("pictureEdit_Settings_OK.EditValue")));
-            this.pictureEdit_Settings_OK.Location = new System.Drawing.Point(169, 237);
+            this.pictureEdit_Settings_OK.Location = new System.Drawing.Point(12, 210);
             this.pictureEdit_Settings_OK.Name = "pictureEdit_Settings_OK";
             this.pictureEdit_Settings_OK.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(133)))), ((int)(((byte)(133)))));
             this.pictureEdit_Settings_OK.Properties.Appearance.Options.UseBackColor = true;
@@ -175,6 +178,31 @@
             this.textEdit_Settings_user.Size = new System.Drawing.Size(91, 20);
             this.textEdit_Settings_user.TabIndex = 11;
             // 
+            // labelControl_Settings_result
+            // 
+            this.labelControl_Settings_result.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelControl_Settings_result.Appearance.ForeColor = System.Drawing.Color.LimeGreen;
+            this.labelControl_Settings_result.Location = new System.Drawing.Point(62, 219);
+            this.labelControl_Settings_result.Name = "labelControl_Settings_result";
+            this.labelControl_Settings_result.Size = new System.Drawing.Size(121, 13);
+            this.labelControl_Settings_result.TabIndex = 13;
+            this.labelControl_Settings_result.Text = "Server xx is available";
+            this.labelControl_Settings_result.Visible = false;
+            // 
+            // pictureEdit_Settings_Wait
+            // 
+            this.pictureEdit_Settings_Wait.EditValue = ((object)(resources.GetObject("pictureEdit_Settings_Wait.EditValue")));
+            this.pictureEdit_Settings_Wait.Location = new System.Drawing.Point(12, 210);
+            this.pictureEdit_Settings_Wait.Name = "pictureEdit_Settings_Wait";
+            this.pictureEdit_Settings_Wait.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(133)))), ((int)(((byte)(133)))));
+            this.pictureEdit_Settings_Wait.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit_Settings_Wait.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit_Settings_Wait.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit_Settings_Wait.Properties.ZoomAccelerationFactor = 1D;
+            this.pictureEdit_Settings_Wait.Size = new System.Drawing.Size(44, 38);
+            this.pictureEdit_Settings_Wait.TabIndex = 14;
+            this.pictureEdit_Settings_Wait.Visible = false;
+            // 
             // Form_Settings
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -182,6 +210,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(321, 314);
+            this.Controls.Add(this.pictureEdit_Settings_Wait);
+            this.Controls.Add(this.labelControl_Settings_result);
             this.Controls.Add(this.labelControl_Settings_user);
             this.Controls.Add(this.textEdit_Settings_user);
             this.Controls.Add(this.labelControl_Settings_port);
@@ -204,6 +234,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit_Settings_OK.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_Settings_port.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_Settings_user.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit_Settings_Wait.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,5 +254,7 @@
         public DevExpress.XtraEditors.TextEdit textEdit_Settings_port;
         private DevExpress.XtraEditors.LabelControl labelControl_Settings_user;
         public DevExpress.XtraEditors.TextEdit textEdit_Settings_user;
+        private DevExpress.XtraEditors.LabelControl labelControl_Settings_result;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit_Settings_Wait;
     }
 }

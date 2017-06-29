@@ -43,10 +43,33 @@ namespace CES_Service_Manager
 
         private void simpleButton_Settings_TestConnection_Click(object sender, EventArgs e)
         {
-           string res =  Set_TestConnection.Check_Connection(textEdit_Settings_IP.Text, textEdit_Settings_port.Text, textEdit_Settings_user.Text, textEdit_Settings_pubKey.Text);
+            pictureEdit_Settings_OK.Visible = false;
+            pictureEdit_Settings_NOK.Visible = false;
+            pictureEdit_Settings_Wait.Visible = false;
+            //labelControl_Settings_result.Visible = false;
+            labelControl_Settings_result.Text = "Wait please...";
+            labelControl_Settings_result.ForeColor = Color.Black;
+            labelControl_Settings_result.Visible = true;
+            pictureEdit_Settings_Wait.Visible = true;
 
-            if (res=="OK")
-            {pictureEdit_Settings_OK.Visible = true;} else { pictureEdit_Settings_NOK.Visible = true; }
+            string res =  Set_TestConnection.Check_Connection(textEdit_Settings_IP.Text, textEdit_Settings_port.Text, textEdit_Settings_user.Text, textEdit_Settings_pubKey.Text);
+
+            if (res!="")
+            {
+                pictureEdit_Settings_OK.Visible = true;
+                labelControl_Settings_result.Text = "Server " + res + "is available";
+                labelControl_Settings_result.ForeColor = Color.Lime;
+                pictureEdit_Settings_Wait.Visible = false;
+            }
+            else
+            {
+                pictureEdit_Settings_NOK.Visible = true; 
+                labelControl_Settings_result.Text = "Server is not available";
+                labelControl_Settings_result.ForeColor = Color.Red;
+                pictureEdit_Settings_Wait.Visible = false;
+            }
+
+            //labelControl_Settings_result.Visible = true;
         }
 
         private void simpleButton_Settings_save_Click(object sender, EventArgs e)
@@ -54,8 +77,8 @@ namespace CES_Service_Manager
             Conf_ServerSettings_xml inst_Conf_ServerSettings_xml = new Conf_ServerSettings_xml();
 
             inst_Conf_ServerSettings_xml.Change_settings(textEdit_Settings_IP.Text, textEdit_Settings_port.Text, textEdit_Settings_user.Text, textEdit_Settings_pubKey.Text);
-            MessageBox.Show("Config has been saved");
-
+            MessageBox.Show("Config has been saved", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+      
     }
 }

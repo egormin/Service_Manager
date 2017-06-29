@@ -15,20 +15,29 @@ namespace CES_Service_Manager
             ConnectionInfo ConnInfo = new ConnectionInfo(ip, user, new AuthenticationMethod[]{
                 new PrivateKeyAuthenticationMethod(user, new PrivateKeyFile[]{ new PrivateKeyFile(@"" + key + "","") }),});
 
+            string result = "";
             using (var sshclient = new SshClient(ConnInfo))
             {
-                sshclient.Connect();
-                using (var cmd = sshclient.CreateCommand("mkdir /tmp/XXX"))
+                try
                 {
-                    cmd.Execute();
-                    //string sss = cmd.ExitStatus;
-                   // Console.WriteLine("Command>" + cmd.CommandText);
-                   // Console.WriteLine("Return Value = {0}", cmd.ExitStatus);
+                    sshclient.Connect();
+                    using (var cmd = sshclient.CreateCommand("hostname"))
+                    {
+                        cmd.Execute();
+                        result = (cmd.Result).Replace("\n", "\r\n");
+                        //string sss = cmd.ExitStatus;
+                        // Console.WriteLine("Command>" + cmd.CommandText);
+                        // Console.WriteLine("Return Value = {0}", cmd.ExitStatus);
+                    }
+                    sshclient.Disconnect();                
                 }
-                sshclient.Disconnect();
+                catch (Exception)
+                {
+                   
+                }
+              
             }
-
-            return "OK";
+            return result;
         }
     }
 }

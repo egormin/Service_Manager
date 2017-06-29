@@ -43,5 +43,27 @@ namespace CES_Service_Manager
         frm_Settings = new Form_Settings();
             frm_Settings.ShowDialog();
         }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("create");
+        }
+
+        private void simpleButton4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("remove");
+        }
+
+        private Form_Jenkins_CreateProject frm_Jenkins_CreateProject;
+        private void simpleButton1_Click_1(object sender, EventArgs e)
+        {
+            frm_Jenkins_CreateProject = new Form_Jenkins_CreateProject();
+            frm_Jenkins_CreateProject.ShowDialog();
+        }
+
+        private void simpleButton4_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("This functionality has not been implemented yet");
+        }
     }
 }

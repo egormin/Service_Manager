@@ -11,9 +11,7 @@ namespace CES_Service_Manager
 {
    public partial class Conf_ServerSettings_xml
     {
-
         private string filePath = "config/configuration.xml";
-
       
         /// <summary>
         /// Load data from config to form
@@ -60,8 +58,7 @@ namespace CES_Service_Manager
             }
             return result;
         }
-
-
+        
         /// <summary>
         /// Change data in config file
         /// </summary>

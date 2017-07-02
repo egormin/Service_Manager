@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Renci.SshNet;
+using Renci.SshNet;   // Key Based Authentication (using keys in OpenSSH Format)
 
 namespace CES_Service_Manager
 {
     class Set_TestConnection
     {
-        public static string Check_Connection(string ip, string port, string user, string key)
+        public static string Check_Connection(string ip, int port, string user, string key)
         {
-
-            ConnectionInfo ConnInfo = new ConnectionInfo(ip, user, new AuthenticationMethod[]{
-                new PrivateKeyAuthenticationMethod(user, new PrivateKeyFile[]{ new PrivateKeyFile(@"" + key + "","") }),});
-
             string result = "";
-            using (var sshclient = new SshClient(ConnInfo))
+           
+            try
             {
-                try
+                ConnectionInfo ConnInfo = new ConnectionInfo(ip, port, user, new AuthenticationMethod[]{
+                new PrivateKeyAuthenticationMethod(user, new PrivateKeyFile[]{ new PrivateKeyFile(@"" + key + "","") }),});
+              
+                using (var sshclient = new SshClient(ConnInfo))
                 {
                     sshclient.Connect();
                     using (var cmd = sshclient.CreateCommand("hostname"))
@@ -29,16 +29,15 @@ namespace CES_Service_Manager
                         // Console.WriteLine("Command>" + cmd.CommandText);
                         // Console.WriteLine("Return Value = {0}", cmd.ExitStatus);
                     }
-                    sshclient.Disconnect();                
+                    sshclient.Disconnect();
                 }
-                catch (Exception)
-                {
-                   
-                }
-              
             }
+            catch (Exception ex)
+            {
+               // string err = ex.ToString();
+            }
+
             return result;
-        }
+        }       
     }
 }
-// Key Based Authentication (using keys in OpenSSH Format)

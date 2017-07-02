@@ -10,6 +10,32 @@ Form_Jenkins_PluginList   (Jenkins Plugin List)
 
 
 CONTROLS:
+<type>_<FormName>_<Name>
+
+Form_ServerSettings:
+panel_Form_ServerSettings_First
+panel_Form_ServerSettings_Second
+
+labelControl_Form_ServerSettings_IP
+labelControl_Form_ServerSettings_Port
+labelControl_Form_ServerSettings_User
+labelControl_Form_ServerSettings_PubKey
+
+textEdit_Form_ServerSettings_IP
+textEdit_Form_ServerSettings_Port
+textEdit_Form_ServerSettings_User
+textEdit_Form_ServerSettings_PubKey
+
+pictureEdit_Form_ServerSettings_Wait
+pictureEdit_Form_ServerSettings_NOK
+pictureEdit_Form_ServerSettings_OK
+
+labelControl_Form_ServerSettings_Result
+labelControl_Form_ServerSettings_SaveSettings
+
+simpleButton_Form_ServerSettings_PubKey
+simpleButton_Form_ServerSettings_TestConnection
+simpleButton_Form_ServerSettings_SaveSettings
 
 
 

@@ -17,20 +17,17 @@ namespace CES_Service_Manager
             InitializeComponent();
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("s");
-        }
+        Show_plugins_FillDatagrid inst_ShowPlugins = new Show_plugins_FillDatagrid();
 
         private void Form_Jenkins_PluginList_Load(object sender, EventArgs e)
         {
-            Show_plugins_FillDatagrid fdr_P = new Show_plugins_FillDatagrid();
-            fdr_P.execut();
+           
+            inst_ShowPlugins.execute();
         }
 
-        private void simpleButton1_Click_1(object sender, EventArgs e)
+        private void simpleButton1_Form_Jenkins_PluginList_Click(object sender, EventArgs e)
         {
-
+            inst_ShowPlugins.execute();
         }
     }
 }

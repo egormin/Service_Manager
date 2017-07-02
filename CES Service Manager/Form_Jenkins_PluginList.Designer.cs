@@ -28,55 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Jenkins_PluginList));
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.gridControl_Form_Jenkins_PluginList = new DevExpress.XtraGrid.GridControl();
+            this.gridView_Form_Jenkins_PluginList = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.simpleButton1_Form_Jenkins_PluginList = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl_Form_Jenkins_PluginList = new DevExpress.XtraEditors.LabelControl();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_Form_Jenkins_PluginList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_Form_Jenkins_PluginList)).BeginInit();
             this.SuspendLayout();
             // 
-            // gridControl1
+            // gridControl_Form_Jenkins_PluginList
             // 
-            gridLevelNode1.RelationName = "Level1";
-            this.gridControl1.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
-            this.gridControl1.Location = new System.Drawing.Point(2, 52);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(673, 627);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            gridLevelNode2.RelationName = "Level1";
+            this.gridControl_Form_Jenkins_PluginList.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode2});
+            this.gridControl_Form_Jenkins_PluginList.Location = new System.Drawing.Point(2, 52);
+            this.gridControl_Form_Jenkins_PluginList.MainView = this.gridView_Form_Jenkins_PluginList;
+            this.gridControl_Form_Jenkins_PluginList.Name = "gridControl_Form_Jenkins_PluginList";
+            this.gridControl_Form_Jenkins_PluginList.Size = new System.Drawing.Size(673, 627);
+            this.gridControl_Form_Jenkins_PluginList.TabIndex = 0;
+            this.gridControl_Form_Jenkins_PluginList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView_Form_Jenkins_PluginList});
             // 
-            // gridView1
+            // gridView_Form_Jenkins_PluginList
             // 
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsFind.AlwaysVisible = true;
+            this.gridView_Form_Jenkins_PluginList.GridControl = this.gridControl_Form_Jenkins_PluginList;
+            this.gridView_Form_Jenkins_PluginList.Name = "gridView_Form_Jenkins_PluginList";
+            this.gridView_Form_Jenkins_PluginList.OptionsFind.AlwaysVisible = true;
             // 
-            // simpleButton1
+            // simpleButton1_Form_Jenkins_PluginList
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(565, 12);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(99, 34);
-            this.simpleButton1.TabIndex = 1;
-            this.simpleButton1.Text = "Refresh";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click_1);
+            this.simpleButton1_Form_Jenkins_PluginList.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.simpleButton1_Form_Jenkins_PluginList.Appearance.Options.UseFont = true;
+            this.simpleButton1_Form_Jenkins_PluginList.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1_Form_Jenkins_PluginList.Image")));
+            this.simpleButton1_Form_Jenkins_PluginList.Location = new System.Drawing.Point(565, 12);
+            this.simpleButton1_Form_Jenkins_PluginList.Name = "simpleButton1_Form_Jenkins_PluginList";
+            this.simpleButton1_Form_Jenkins_PluginList.Size = new System.Drawing.Size(99, 34);
+            this.simpleButton1_Form_Jenkins_PluginList.TabIndex = 1;
+            this.simpleButton1_Form_Jenkins_PluginList.Text = "Refresh";
+            this.simpleButton1_Form_Jenkins_PluginList.Click += new System.EventHandler(this.simpleButton1_Form_Jenkins_PluginList_Click);
             // 
-            // labelControl1
+            // labelControl_Form_Jenkins_PluginList
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelControl1.Location = new System.Drawing.Point(12, 27);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(159, 19);
-            this.labelControl1.TabIndex = 2;
-            this.labelControl1.Text = "Jenkins Plugins List";
+            this.labelControl_Form_Jenkins_PluginList.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelControl_Form_Jenkins_PluginList.Location = new System.Drawing.Point(12, 27);
+            this.labelControl_Form_Jenkins_PluginList.Name = "labelControl_Form_Jenkins_PluginList";
+            this.labelControl_Form_Jenkins_PluginList.Size = new System.Drawing.Size(159, 19);
+            this.labelControl_Form_Jenkins_PluginList.TabIndex = 2;
+            this.labelControl_Form_Jenkins_PluginList.Text = "Jenkins Plugins List";
             // 
             // Form_Jenkins_PluginList
             // 
@@ -85,24 +85,24 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(676, 679);
-            this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.simpleButton1);
-            this.Controls.Add(this.gridControl1);
+            this.Controls.Add(this.labelControl_Form_Jenkins_PluginList);
+            this.Controls.Add(this.simpleButton1_Form_Jenkins_PluginList);
+            this.Controls.Add(this.gridControl_Form_Jenkins_PluginList);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Jenkins_PluginList";
             this.Text = "Jenkins Plugin List";
             this.Load += new System.EventHandler(this.Form_Jenkins_PluginList_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_Form_Jenkins_PluginList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_Form_Jenkins_PluginList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        public DevExpress.XtraGrid.GridControl gridControl1;
-        public DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1_Form_Jenkins_PluginList;
+        public DevExpress.XtraGrid.GridControl gridControl_Form_Jenkins_PluginList;
+        public DevExpress.XtraGrid.Views.Grid.GridView gridView_Form_Jenkins_PluginList;
+        public DevExpress.XtraEditors.LabelControl labelControl_Form_Jenkins_PluginList;
     }
 }

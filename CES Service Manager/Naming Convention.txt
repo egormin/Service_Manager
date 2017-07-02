@@ -12,7 +12,7 @@ Form_Jenkins_PluginList   (Jenkins Plugin List)
 CONTROLS:
 <type>_<FormName>_<Name>
 
-Form_ServerSettings:
+**************** Form_ServerSettings ****************
 panel_Form_ServerSettings_First
 panel_Form_ServerSettings_Second
 
@@ -36,6 +36,14 @@ labelControl_Form_ServerSettings_SaveSettings
 simpleButton_Form_ServerSettings_PubKey
 simpleButton_Form_ServerSettings_TestConnection
 simpleButton_Form_ServerSettings_SaveSettings
+
+**************** Form_Jenkins_PluginList ****************
+gridControl_Form_Jenkins_PluginList
+gridView_Form_Jenkins_PluginList
+
+labelControl_Form_Jenkins_PluginList
+
+simpleButton1_Form_Jenkins_PluginList
 
 
 

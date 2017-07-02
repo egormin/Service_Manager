@@ -33,8 +33,8 @@ namespace CES_Service_Manager
             public string Plugin_Name
             {
                
-                get { plug_name = "dwewe"; return plug_name; }
-                set { plug_name = "dwewe";  plug_name = value; }
+                get {  return plug_name; }
+                set {  plug_name = value; }
             }
             public string Age
             {
@@ -49,23 +49,9 @@ namespace CES_Service_Manager
         }
 
 
-        public void execut()
+        public void execute()
         {
-            var frm = GetForm<Form_Jenkins_PluginList>();
-
-            //DataTable dt = new DataTable();
-            //dt.Columns.Add("Num", Type.GetType("System.String"));
-            //dt.Columns.Add("Plugin Name", Type.GetType("System.String"));
-            //dt.Columns.Add("System Name", Type.GetType("System.String"));
-            //dt.Columns.Add("Plugin Version", Type.GetType("System.String"));
-
-            //   frm.gridColumn1.
-
-
-            //DataRow dr = dt.NewRow();
-            //dt.Rows.Add(dr);
-
-            //dt.Rows.Clear();
+            var frm = GetForm<Form_Jenkins_PluginList>();           
       
 
             string ip;
@@ -162,8 +148,9 @@ namespace CES_Service_Manager
                 //listDataSource.Add(new Record(i, a, b, c));
             }
 
-          frm.gridControl1.DataSource = listDataSource;
-            frm.gridView1.BestFitColumns();
+          frm.gridControl_Form_Jenkins_PluginList.DataSource = listDataSource;
+            frm.gridView_Form_Jenkins_PluginList.BestFitColumns();
+            frm.labelControl_Form_Jenkins_PluginList.Text = "Jenkins Plugins List (" + variants.Length + ")";
 
 
 

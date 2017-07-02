@@ -63,11 +63,11 @@ namespace CES_Service_Manager
             MessageBox.Show("remove");
         }
 
-        private Form_Jenkins_PluginList frm_Jenkins_CreateProject;
+        private Form_Jenkins_PluginList frm_Form_Jenkins_PluginList;
         private void simpleButton1_Click_1(object sender, EventArgs e)
         {
-            frm_Jenkins_CreateProject = new Form_Jenkins_PluginList();
-            frm_Jenkins_CreateProject.ShowDialog();
+            frm_Form_Jenkins_PluginList = new Form_Jenkins_PluginList();
+            frm_Form_Jenkins_PluginList.ShowDialog();
         }
 
         private void simpleButton4_Click_1(object sender, EventArgs e)

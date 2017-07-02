@@ -1,7 +1,10 @@
 ﻿FORMS:
-Form_<System>_<Function>
+Form_<Function>  
+Form_<System>_<Function>  (if depends ons system)
+
 Form_Main  (CES Service Manager);
-Form_ServerSettings   ()
+Form_ServerSettings   (Server Settings)
+Form_Jenkins_PluginList   (Jenkins Plugin List)
 
 
 

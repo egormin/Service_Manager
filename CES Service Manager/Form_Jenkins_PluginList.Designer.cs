@@ -45,7 +45,7 @@
             this.gridControl1.Location = new System.Drawing.Point(2, 69);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(609, 517);
+            this.gridControl1.Size = new System.Drawing.Size(673, 610);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -74,13 +74,13 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(612, 586);
+            this.ClientSize = new System.Drawing.Size(676, 679);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.gridControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Jenkins_PluginList";
             this.Text = "Jenkins Plugin List";
-            this.Load += new System.EventHandler(this.Form_Jenkins_CreateProject_Load);
+            this.Load += new System.EventHandler(this.Form_Jenkins_PluginList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);

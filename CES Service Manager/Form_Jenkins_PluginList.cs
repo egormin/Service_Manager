@@ -22,7 +22,7 @@ namespace CES_Service_Manager
             MessageBox.Show("s");
         }
 
-        private void Form_Jenkins_CreateProject_Load(object sender, EventArgs e)
+        private void Form_Jenkins_PluginList_Load(object sender, EventArgs e)
         {
             Show_plugins_FillDatagrid fdr_P = new Show_plugins_FillDatagrid();
             fdr_P.execut();

@@ -32,8 +32,9 @@ namespace CES_Service_Manager
             public int NUM { get { return num; } }
             public string Plugin_Name
             {
-                get { return plug_name; }
-                set { plug_name = value; }
+               
+                get { plug_name = "dwewe"; return plug_name; }
+                set { plug_name = "dwewe";  plug_name = value; }
             }
             public string Age
             {
@@ -52,20 +53,20 @@ namespace CES_Service_Manager
         {
             var frm = GetForm<Form_Jenkins_PluginList>();
 
-            DataTable dt = new DataTable();
-            dt.Columns.Add("Num", Type.GetType("System.String"));
-            dt.Columns.Add("Plugin Name", Type.GetType("System.String"));
-            dt.Columns.Add("System Name", Type.GetType("System.String"));
-            dt.Columns.Add("Plugin Version", Type.GetType("System.String"));
+            //DataTable dt = new DataTable();
+            //dt.Columns.Add("Num", Type.GetType("System.String"));
+            //dt.Columns.Add("Plugin Name", Type.GetType("System.String"));
+            //dt.Columns.Add("System Name", Type.GetType("System.String"));
+            //dt.Columns.Add("Plugin Version", Type.GetType("System.String"));
 
             //   frm.gridColumn1.
-        
 
-            DataRow dr = dt.NewRow();
-            dt.Rows.Add(dr);
 
-            dt.Rows.Clear();
+            //DataRow dr = dt.NewRow();
+            //dt.Rows.Add(dr);
 
+            //dt.Rows.Clear();
+      
 
             string ip;
             string user;
@@ -147,8 +148,10 @@ namespace CES_Service_Manager
                         sss = "XXXXXXXXXXXXXXXXXX";
                     }
 
+
                 }
                 // listDataSource.Add(new Record(i, variants[i].Substring(0, 34).Trim(), variants[i].Substring(0, 10).Trim(), variants[i].Substring(0, 5).Trim()));
+
 
                 try
                 { listDataSource.Add(new Record(i+1, variants2[0], variants2[1], sss)); }
@@ -161,6 +164,7 @@ namespace CES_Service_Manager
 
           frm.gridControl1.DataSource = listDataSource;
             frm.gridView1.BestFitColumns();
+
 
 
         }

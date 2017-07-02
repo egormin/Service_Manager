@@ -71,11 +71,11 @@
     <Compile Include="Form_Main.Designer.cs">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Jenkins_CreateProject.cs">
+    <Compile Include="Form_Jenkins_PluginList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Jenkins_CreateProject.Designer.cs">
-      <DependentUpon>Form_Jenkins_CreateProject.cs</DependentUpon>
+    <Compile Include="Form_Jenkins_PluginList.Designer.cs">
+      <DependentUpon>Form_Jenkins_PluginList.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_ServerSettings.cs">
       <SubType>Form</SubType>
@@ -90,8 +90,8 @@
     <EmbeddedResource Include="Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Jenkins_CreateProject.resx">
-      <DependentUpon>Form_Jenkins_CreateProject.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Jenkins_PluginList.resx">
+      <DependentUpon>Form_Jenkins_PluginList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ServerSettings.resx">
       <DependentUpon>Form_ServerSettings.cs</DependentUpon>

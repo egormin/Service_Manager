@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CES_Service_Manager
 {
-    public partial class Form_Jenkins_CreateProject : DevExpress.XtraEditors.XtraForm
+    public partial class Form_Jenkins_PluginList : DevExpress.XtraEditors.XtraForm
     {
-        public Form_Jenkins_CreateProject()
+        public Form_Jenkins_PluginList()
         {
             InitializeComponent();
         }
@@ -26,6 +26,11 @@ namespace CES_Service_Manager
         {
             Show_plugins_FillDatagrid fdr_P = new Show_plugins_FillDatagrid();
             fdr_P.execut();
+        }
+
+        private void simpleButton1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

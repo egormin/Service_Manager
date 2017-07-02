@@ -6,19 +6,28 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
 
 namespace CES_Service_Manager
 {
-    public partial class Form1 : DevExpress.XtraEditors.XtraForm
+    public partial class Form_Main : DevExpress.XtraEditors.XtraForm
     {
-        public Form1()
+        public Form_Main()
         {
-            InitializeComponent();    
-        }
+            InitializeComponent();
+            CultureInfo culture = CultureInfo.CreateSpecificCulture("en-EN");
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-          
+            // The following line provides localization for the application's user interface.  
+            Thread.CurrentThread.CurrentUICulture = culture;
+
+            // The following line provides localization for data formats.  
+            Thread.CurrentThread.CurrentCulture = culture;
+
+            // Set this culture as the default culture for all threads in this application.  
+            // Note: The following properties are supported in the .NET Framework 4.5+ 
+            CultureInfo.DefaultThreadCurrentCulture = culture;
+            CultureInfo.DefaultThreadCurrentUICulture = culture;
         }
 
         private void Jenkins_Clicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
@@ -36,11 +45,11 @@ namespace CES_Service_Manager
             MessageBox.Show("CES Service Manager v. 1.0. Designed by Egor");
         }
 
-        private Form_Settings frm_Settings;
+        private Form_ServerSettings frm_Settings;
         private void barButtonItem_ServerSettings_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
            
-        frm_Settings = new Form_Settings();
+        frm_Settings = new Form_ServerSettings();
             frm_Settings.ShowDialog();
         }
 
@@ -54,10 +63,10 @@ namespace CES_Service_Manager
             MessageBox.Show("remove");
         }
 
-        private Form_Jenkins_CreateProject frm_Jenkins_CreateProject;
+        private Form_Jenkins_PluginList frm_Jenkins_CreateProject;
         private void simpleButton1_Click_1(object sender, EventArgs e)
         {
-            frm_Jenkins_CreateProject = new Form_Jenkins_CreateProject();
+            frm_Jenkins_CreateProject = new Form_Jenkins_PluginList();
             frm_Jenkins_CreateProject.ShowDialog();
         }
 

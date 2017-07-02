@@ -1,0 +1,29 @@
+﻿FORMS:
+Form_<System>_<Function>
+Form_Main  (CES Service Manager);
+Form_ServerSettings   ()
+
+
+
+
+CONTROLS:
+
+
+
+
+CLASSES:
+
+
+
+
+
+METHODS:
+
+
+
+
+VARS:
+
+
+
+

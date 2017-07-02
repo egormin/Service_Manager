@@ -1,6 +1,6 @@
 ﻿namespace CES_Service_Manager
 {
-    partial class Form_Settings
+    partial class Form_ServerSettings
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Settings));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_ServerSettings));
             this.textEdit_Settings_IP = new DevExpress.XtraEditors.TextEdit();
             this.labelControl_Settings_IP = new DevExpress.XtraEditors.LabelControl();
             this.labelControl_Settings_PubKey = new DevExpress.XtraEditors.LabelControl();
@@ -90,7 +90,7 @@
             // simpleButton_Settings_PubKey
             // 
             this.simpleButton_Settings_PubKey.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton_Settings_PubKey.Image")));
-            this.simpleButton_Settings_PubKey.Location = new System.Drawing.Point(240, 136);
+            this.simpleButton_Settings_PubKey.Location = new System.Drawing.Point(240, 139);
             this.simpleButton_Settings_PubKey.Name = "simpleButton_Settings_PubKey";
             this.simpleButton_Settings_PubKey.Size = new System.Drawing.Size(38, 36);
             this.simpleButton_Settings_PubKey.TabIndex = 4;
@@ -203,7 +203,7 @@
             this.pictureEdit_Settings_Wait.TabIndex = 14;
             this.pictureEdit_Settings_Wait.Visible = false;
             // 
-            // Form_Settings
+            // Form_ServerSettings
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Appearance.Options.UseBackColor = true;
@@ -225,9 +225,10 @@
             this.Controls.Add(this.labelControl_Settings_PubKey);
             this.Controls.Add(this.labelControl_Settings_IP);
             this.Controls.Add(this.textEdit_Settings_IP);
-            this.Name = "Form_Settings";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form_ServerSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form_Settings";
+            this.Text = "Server Settings";
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_Settings_IP.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_Settings_pubKey.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit_Settings_NOK.Properties)).EndInit();

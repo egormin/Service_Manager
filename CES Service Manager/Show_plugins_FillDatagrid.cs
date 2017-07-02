@@ -50,7 +50,7 @@ namespace CES_Service_Manager
 
         public void execut()
         {
-            var frm = GetForm<Form_Jenkins_CreateProject>();
+            var frm = GetForm<Form_Jenkins_PluginList>();
 
             DataTable dt = new DataTable();
             dt.Columns.Add("Num", Type.GetType("System.String"));
@@ -58,10 +58,10 @@ namespace CES_Service_Manager
             dt.Columns.Add("System Name", Type.GetType("System.String"));
             dt.Columns.Add("Plugin Version", Type.GetType("System.String"));
 
-         //   frm.gridColumn1.
+            //   frm.gridColumn1.
+        
 
-
-             DataRow dr = dt.NewRow();
+            DataRow dr = dt.NewRow();
             dt.Rows.Add(dr);
 
             dt.Rows.Clear();
@@ -160,6 +160,7 @@ namespace CES_Service_Manager
             }
 
           frm.gridControl1.DataSource = listDataSource;
+            frm.gridView1.BestFitColumns();
 
 
         }

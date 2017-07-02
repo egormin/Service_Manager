@@ -43,7 +43,6 @@ D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\es\DevExpress.Pdf.v16.1.Core.resources.dll
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\ja\DevExpress.Pdf.v16.1.Core.resources.dll
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\ru\DevExpress.Pdf.v16.1.Core.resources.dll
-D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES_Service_Manager.Form1.resources
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES_Service_Manager.Properties.Resources.resources
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES Service Manager.csproj.GenerateResource.Cache
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES Service Manager.exe.licenses
@@ -96,12 +95,13 @@ D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\es\DevExpress.Office.v16.1.Core.resources.dll
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\ja\DevExpress.Office.v16.1.Core.resources.dll
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\ru\DevExpress.Office.v16.1.Core.resources.dll
-D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES_Service_Manager.Form_Settings.resources
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\Renci.SshNet.dll
-D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES_Service_Manager.Form_Jenkins_CreateProject.resources
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\DevExpress.XtraGrid.v16.1.dll
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\DevExpress.XtraGrid.v16.1.xml
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\de\DevExpress.XtraGrid.v16.1.resources.dll
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\es\DevExpress.XtraGrid.v16.1.resources.dll
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\ja\DevExpress.XtraGrid.v16.1.resources.dll
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\bin\Debug\ru\DevExpress.XtraGrid.v16.1.resources.dll
+D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES_Service_Manager.Form_Jenkins_PluginList.resources
+D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES_Service_Manager.Form_Main.resources
+D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES_Service_Manager.Form_ServerSettings.resources

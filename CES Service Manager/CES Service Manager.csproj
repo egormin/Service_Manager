@@ -65,11 +65,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conf_ServerSettings_xml.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Form_Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Jenkins_CreateProject.cs">
       <SubType>Form</SubType>
@@ -77,24 +77,24 @@
     <Compile Include="Form_Jenkins_CreateProject.Designer.cs">
       <DependentUpon>Form_Jenkins_CreateProject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Settings.cs">
+    <Compile Include="Form_ServerSettings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Settings.Designer.cs">
-      <DependentUpon>Form_Settings.cs</DependentUpon>
+    <Compile Include="Form_ServerSettings.Designer.cs">
+      <DependentUpon>Form_ServerSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Set_TestConnection.cs" />
     <Compile Include="Show_plugins_FillDatagrid.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Jenkins_CreateProject.resx">
       <DependentUpon>Form_Jenkins_CreateProject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Settings.resx">
-      <DependentUpon>Form_Settings.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ServerSettings.resx">
+      <DependentUpon>Form_ServerSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -119,6 +119,7 @@
   <ItemGroup>
     <Content Include="computer.ico" />
     <Content Include="FRW.ico" />
+    <Content Include="Naming Convention.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Config\" />

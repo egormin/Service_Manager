@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace CES_Service_Manager
 {
-    public partial class Form_Settings : DevExpress.XtraEditors.XtraForm
+    public partial class Form_ServerSettings : DevExpress.XtraEditors.XtraForm
     {
 
 
-        public Form_Settings()
+        public Form_ServerSettings()
         {
             InitializeComponent();
             Conf_ServerSettings_xml inst_Conf_ServerSettings_xml = new Conf_ServerSettings_xml();
@@ -46,9 +46,8 @@ namespace CES_Service_Manager
             pictureEdit_Settings_OK.Visible = false;
             pictureEdit_Settings_NOK.Visible = false;
             pictureEdit_Settings_Wait.Visible = false;
-            //labelControl_Settings_result.Visible = false;
             labelControl_Settings_result.Text = "Wait please...";
-            labelControl_Settings_result.ForeColor = Color.Black;
+            labelControl_Settings_result.ForeColor = Color.Gray;
             labelControl_Settings_result.Visible = true;
             pictureEdit_Settings_Wait.Visible = true;
 
@@ -57,7 +56,7 @@ namespace CES_Service_Manager
             if (res!="")
             {
                 pictureEdit_Settings_OK.Visible = true;
-                labelControl_Settings_result.Text = "Server " + res + "is available";
+                labelControl_Settings_result.Text = "Server: \n" + res + "is available";
                 labelControl_Settings_result.ForeColor = Color.Lime;
                 pictureEdit_Settings_Wait.Visible = false;
             }

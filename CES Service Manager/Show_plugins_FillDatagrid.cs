@@ -29,14 +29,14 @@ namespace CES_Service_Manager
                 this.age = age;
                 this.plugin_version = plugin_version;
             }
-            public int NUM { get { return num; } }
-            public string Plugin_Name
+            public int Num { get { return num; } }
+            public string Plugin_ID
             {
                
                 get {  return plug_name; }
                 set {  plug_name = value; }
             }
-            public string Age
+            public string Plugin_Name
             {
                 get { return age; }
                 set { age = value; }
@@ -51,112 +51,50 @@ namespace CES_Service_Manager
 
         public void execute()
         {
-            var frm = GetForm<Form_Jenkins_PluginList>();           
-      
+            var frm = GetForm<Form_Jenkins_PluginList>();
 
-            string ip;
-            string user;
-            string command;
-            int port;
-            string key;
 
-            ip = "192.168.138.13";
-            port = 22;
-            user = "root";
-            key = "D:/keys/eg_priv_os.ppk";
-
-            ConnectionInfo ConnInfo = new ConnectionInfo(ip, port, user,
-               new AuthenticationMethod[]{
-                new PrivateKeyAuthenticationMethod(user, new PrivateKeyFile[]{  // Key Based Authentication (using keys in OpenSSH Format)
-                    new PrivateKeyFile(@"" + key + "","passphrase")          }),
-                                         }
-                                                       );
-
-            string[] variants;
-            using (var sshclient = new SshClient(ConnInfo))
+            string output = Call_jenkins_plugins.Meth_Call_jenkins_plugins();
+            if (output == "NotFilledConf")
             {
-                sshclient.Connect();
-                using (var cmd = sshclient.CreateCommand("python /tmp/jenkins_plugins.py"))
-                // using (var cmd = sshclient.CreateCommand("python --version"))
-                {
-                    cmd.Execute();
-                    string output = (cmd.Result).Replace("b'","");
-                     variants = output.Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);
-                    string[] variants1 = variants[0].Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
-
-                    string s = variants[0];
-
-                    char[] x = { ' ' };
-
-                    int i = s.IndexOfAny(x);
-                    //string sss = variants[0].Remove(35,55);
-                    string vvv = variants[0].Substring(35, 55).Trim();
-                    // string[] variants2 = sss.Split(new string[] { "  " }, StringSplitOptions.RemoveEmptyEntries);
-
-                    //string sss = cmd.ExitStatus;
-                    // Console.WriteLine("Command>" + cmd.CommandText);
-                    // Console.WriteLine("Return Value = {0}", cmd.ExitStatus);
-                }
-                sshclient.Disconnect();
+                MessageBox.Show("Please fill server config at first \n Settings -> Server Settings", "Server config not filled properly", MessageBoxButtons.OK, MessageBoxIcon.Error); return;
             }
 
+            if (output== "NoConnect")
+            {
+                MessageBox.Show("Please check network connection and server config \n Settings -> Server Settings", "Jenkins or automation server is unavailable", MessageBoxButtons.OK, MessageBoxIcon.Error); return;
+            }      
 
+            string[] plugin_array = output.Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);
 
             List<Record> listDataSource = new List<Record>();
 
-            string a,b,c;
-
-            for (int i = 0; i < variants.Length; i++)
+            string plugin_id;
+            string plugin_name;
+            string plugin_version;
+            for (int i = 0; i < plugin_array.Length; i++)
             {
-                //a = variants[i].Substring(0, 33).Trim();
-                //b = variants[i].Substring(33, 55).Trim();
-                //c = variants[i].Substring(50, 53).Trim();
-                string sss;
-                string[] variants2 = variants[i].Split(new string[] { "  " }, StringSplitOptions.RemoveEmptyEntries);
-                if (variants2.Length==2)
+                plugin_id = (plugin_array[i].Split(' '))[0];
+                plugin_array[i] = plugin_array[i].Remove(0, plugin_id.Length);
+                string[] each_plugin = plugin_array[i].Split(new string[] { "  " }, StringSplitOptions.RemoveEmptyEntries);
+
+                if (each_plugin.Length == 2)
                 {
-                    try
-                    {
-                        sss = (variants2[1].Remove(0, 65)).Trim();
-                    }
-                    catch (Exception e)
-                    {
-                        sss = "XXXXXXXXXXXXXXXXXX";
-                    }
-                   
-                }
+                    plugin_name = each_plugin[0];
+                    plugin_version = each_plugin[1];
+                }  
                 else
                 {
-                    try
-                    { sss = variants2[2]; }
-                    catch (Exception e)
-                    {
-                        sss = "XXXXXXXXXXXXXXXXXX";
-                    }
-
-
-                }
-                // listDataSource.Add(new Record(i, variants[i].Substring(0, 34).Trim(), variants[i].Substring(0, 10).Trim(), variants[i].Substring(0, 5).Trim()));
-
-
-                try
-                { listDataSource.Add(new Record(i+1, variants2[0], variants2[1], sss)); }
-                catch (Exception e)
-                {
-                   
-                }
-                //listDataSource.Add(new Record(i, a, b, c));
+                    plugin_name = each_plugin[0].Remove(65, each_plugin[0].Length - 65);
+                    plugin_version = each_plugin[0].Remove(0, 64);
+                }             
+           
+                listDataSource.Add(new Record(i+1, plugin_id.Trim(), plugin_name.Trim(), plugin_version.Trim()));  
             }
 
-          frm.gridControl_Form_Jenkins_PluginList.DataSource = listDataSource;
+            frm.gridControl_Form_Jenkins_PluginList.DataSource = listDataSource;
             frm.gridView_Form_Jenkins_PluginList.BestFitColumns();
-            frm.labelControl_Form_Jenkins_PluginList.Text = "Jenkins Plugins List (" + variants.Length + ")";
-
-
-
+            frm.labelControl_Form_Jenkins_PluginList.Text = "Jenkins Plugins List (" + output.Length + ")";
         }
-
-
-
     }
 }

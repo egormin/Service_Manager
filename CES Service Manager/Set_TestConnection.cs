@@ -25,9 +25,6 @@ namespace CES_Service_Manager
                     {
                         cmd.Execute();
                         result = (cmd.Result).Replace("\n", "\r\n");
-                        //string sss = cmd.ExitStatus;
-                        // Console.WriteLine("Command>" + cmd.CommandText);
-                        // Console.WriteLine("Return Value = {0}", cmd.ExitStatus);
                     }
                     sshclient.Disconnect();
                 }

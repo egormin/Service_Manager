@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calls\Call_jenkins_plugins.cs" />
     <Compile Include="Conf_ServerSettings_xml.cs" />
     <Compile Include="Form_Main.cs">
       <SubType>Form</SubType>

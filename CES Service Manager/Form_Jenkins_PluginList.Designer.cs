@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Jenkins_PluginList));
             this.gridControl_Form_Jenkins_PluginList = new DevExpress.XtraGrid.GridControl();
             this.gridView_Form_Jenkins_PluginList = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -40,9 +40,9 @@
             // 
             // gridControl_Form_Jenkins_PluginList
             // 
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.gridControl_Form_Jenkins_PluginList.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.gridControl_Form_Jenkins_PluginList.Location = new System.Drawing.Point(2, 52);
             this.gridControl_Form_Jenkins_PluginList.MainView = this.gridView_Form_Jenkins_PluginList;
             this.gridControl_Form_Jenkins_PluginList.Name = "gridControl_Form_Jenkins_PluginList";

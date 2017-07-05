@@ -106,3 +106,4 @@ D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES_Service_Manager.Form_Main.resources
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES_Service_Manager.Form_ServerSettings.resources
 D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES_Service_Manager.Form_ScriptsSettings.resources
+D:\Visual Studio Projects\PROD\CES Service Manager\CES Service Manager\obj\Debug\CES_Service_Manager.Form_EnvironmentJenkins.resources

@@ -81,5 +81,12 @@ namespace CES_Service_Manager
             frm_ScriptsSettings = new Form_ScriptsSettings();
             frm_ScriptsSettings.ShowDialog();
         }
+
+        private Form_EnvironmentJenkins frm_EnvironmentJenkins;
+        private void Form_Main_barButtonItem_EnvironmentJenkins_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frm_EnvironmentJenkins = new Form_EnvironmentJenkins();
+            frm_EnvironmentJenkins.ShowDialog();
+        }
     }
 }

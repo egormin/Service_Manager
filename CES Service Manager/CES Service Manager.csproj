@@ -65,8 +65,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calls\Call_jenkins_plugins.cs" />
+    <Compile Include="Conf_EnvironmentJenkins_xml.cs" />
     <Compile Include="Conf_ScriptsSettings_xml.cs" />
     <Compile Include="Conf_ServerSettings_xml.cs" />
+    <Compile Include="Form_EnvironmentJenkins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EnvironmentJenkins.Designer.cs">
+      <DependentUpon>Form_EnvironmentJenkins.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +103,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Set_TestConnection.cs" />
     <Compile Include="Show_plugins_FillDatagrid.cs" />
+    <EmbeddedResource Include="Form_EnvironmentJenkins.resx">
+      <DependentUpon>Form_EnvironmentJenkins.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </EmbeddedResource>

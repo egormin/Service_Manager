@@ -86,7 +86,7 @@
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.galleryDropDown1 = new DevExpress.XtraBars.Ribbon.GalleryDropDown(this.components);
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.Form_Main_barButtonItem_EnvironmentJenkins = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonGroup4 = new DevExpress.XtraBars.BarButtonGroup();
@@ -126,7 +126,7 @@
             this.barButton_About,
             this.Form_Main_barButtonItem_ScriptsSettings,
             this.Form_Main_barButtonItem_ServerSettings,
-            this.barButtonItem3,
+            this.Form_Main_barButtonItem_EnvironmentJenkins,
             this.barButtonItem5,
             this.barButtonGroup4,
             this.barButtonItem6,
@@ -605,18 +605,19 @@
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Environment";
             // 
-            // barButtonItem3
+            // Form_Main_barButtonItem_EnvironmentJenkins
             // 
-            this.barButtonItem3.Caption = "Jenkins";
-            this.barButtonItem3.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.Glyph")));
-            this.barButtonItem3.Id = 15;
-            this.barButtonItem3.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.LargeGlyph")));
-            this.barButtonItem3.Name = "barButtonItem3";
+            this.Form_Main_barButtonItem_EnvironmentJenkins.Caption = "Jenkins";
+            this.Form_Main_barButtonItem_EnvironmentJenkins.Glyph = ((System.Drawing.Image)(resources.GetObject("Form_Main_barButtonItem_EnvironmentJenkins.Glyph")));
+            this.Form_Main_barButtonItem_EnvironmentJenkins.Id = 15;
+            this.Form_Main_barButtonItem_EnvironmentJenkins.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("Form_Main_barButtonItem_EnvironmentJenkins.LargeGlyph")));
+            this.Form_Main_barButtonItem_EnvironmentJenkins.Name = "Form_Main_barButtonItem_EnvironmentJenkins";
+            this.Form_Main_barButtonItem_EnvironmentJenkins.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Form_Main_barButtonItem_EnvironmentJenkins_ItemClick);
             // 
             // ribbonPageGroup1
             // 
             this.ribbonPageGroup1.AllowTextClipping = false;
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup1.ItemLinks.Add(this.Form_Main_barButtonItem_EnvironmentJenkins);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem5);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem6);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem7);
@@ -637,7 +638,7 @@
             this.barButtonGroup4.Caption = "barButtonGroup4";
             this.barButtonGroup4.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
             this.barButtonGroup4.Id = 17;
-            this.barButtonGroup4.ItemLinks.Add(this.barButtonItem3);
+            this.barButtonGroup4.ItemLinks.Add(this.Form_Main_barButtonItem_EnvironmentJenkins);
             this.barButtonGroup4.ItemLinks.Add(this.barButtonItem5);
             this.barButtonGroup4.Name = "barButtonGroup4";
             // 
@@ -763,7 +764,7 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem Form_Main_barButtonItem_EnvironmentJenkins;
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.BarButtonGroup barButtonGroup4;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;

@@ -27,8 +27,7 @@ namespace CES_Service_Manager
                 textEdit_Form_ServerSettings_Port.Text = settingsFromFile[1];
                 textEdit_Form_ServerSettings_User.Text = settingsFromFile[2];
                 textEdit_Form_ServerSettings_PubKey.Text = settingsFromFile[3];
-            }     
-           
+            }               
         }
 
         private void simpleButton_Form_ServerSettings_PubKey_Click(object sender, EventArgs e)

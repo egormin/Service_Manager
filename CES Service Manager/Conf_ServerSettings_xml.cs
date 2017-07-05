@@ -11,7 +11,7 @@ namespace CES_Service_Manager
 {
    public partial class Conf_ServerSettings_xml
     {
-        private string filePath = "config/configuration.xml";
+        private string filePath = "config/ServerConfiguration.xml";
       
         /// <summary>
         /// Load data from config to form

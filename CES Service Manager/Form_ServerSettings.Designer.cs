@@ -262,7 +262,7 @@
             this.Controls.Add(this.simpleButton_Form_ServerSettings_TestConnection);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_ServerSettings";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Automation Server Settings";
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_Form_ServerSettings_IP.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_Form_ServerSettings_PubKey.Properties)).EndInit();

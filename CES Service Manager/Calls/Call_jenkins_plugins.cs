@@ -26,7 +26,10 @@ namespace CES_Service_Manager
                     string user = settingsFromFile[2];
                     string key = settingsFromFile[3];
 
-                    ConnectionInfo ConnInfo = new ConnectionInfo(ip, port, user,
+                    Conf_ScriptsSettings_xml inst_Conf_ScriptsSettings_xml = new Conf_ScriptsSettings_xml();
+                    string path = inst_Conf_ScriptsSettings_xml.LoadDataFromFile();
+
+                ConnectionInfo ConnInfo = new ConnectionInfo(ip, port, user,
                     new AuthenticationMethod[] {new PrivateKeyAuthenticationMethod(user, new PrivateKeyFile[]
                    {  // Key Based Authentication (using keys in OpenSSH Format)
                            new PrivateKeyFile(@"" + key + "","passphrase") }),});
@@ -35,7 +38,7 @@ namespace CES_Service_Manager
                     using (var sshclient = new SshClient(ConnInfo))
                     {
                         sshclient.Connect();
-                        using (var cmd = sshclient.CreateCommand("python /tmp/jenkins_plugins.py"))
+                        using (var cmd = sshclient.CreateCommand("python " + path + "jenkins_plugins.py"))
                         {
                             cmd.Execute();
                             output = (cmd.Result).Replace("b'", "");

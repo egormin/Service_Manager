@@ -12,6 +12,11 @@ Form_Jenkins_PluginList   (Jenkins Plugin List)
 CONTROLS:
 <type>_<FormName>_<Name>
 
+**************** Form_Main ****************
+Form_Main_barButtonItem_ServerSettings
+Form_Main_barButtonItem_ScriptsSettings
+
+
 **************** Form_ServerSettings ****************
 panel_Form_ServerSettings_First
 panel_Form_ServerSettings_Second

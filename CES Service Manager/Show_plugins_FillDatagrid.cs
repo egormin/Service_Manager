@@ -94,7 +94,7 @@ namespace CES_Service_Manager
 
             frm.gridControl_Form_Jenkins_PluginList.DataSource = listDataSource;
             frm.gridView_Form_Jenkins_PluginList.BestFitColumns();
-            frm.labelControl_Form_Jenkins_PluginList.Text = "Jenkins Plugins List (" + output.Length + ")";
+            frm.labelControl_Form_Jenkins_PluginList.Text = "Jenkins Plugins List (" + plugin_array.Length + ")";
         }
     }
 }

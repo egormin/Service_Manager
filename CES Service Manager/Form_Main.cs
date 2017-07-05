@@ -45,12 +45,12 @@ namespace CES_Service_Manager
             MessageBox.Show("CES Service Manager v. 1.0. Designed by Egor");
         }
 
-        private Form_ServerSettings frm_Settings;
-        private void barButtonItem_ServerSettings_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private Form_ServerSettings frm_ServerSettings;
+        private void Form_Main_barButtonItem_ServerSettings_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
            
-        frm_Settings = new Form_ServerSettings();
-            frm_Settings.ShowDialog();
+            frm_ServerSettings = new Form_ServerSettings();
+            frm_ServerSettings.ShowDialog();
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
@@ -73,6 +73,13 @@ namespace CES_Service_Manager
         private void simpleButton4_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show("This functionality has not been implemented yet");
+        }
+
+        private Form_ScriptsSettings frm_ScriptsSettings;
+        private void Form_Main_barButtonItem_ScriptsSettings_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frm_ScriptsSettings = new Form_ScriptsSettings();
+            frm_ScriptsSettings.ShowDialog();
         }
     }
 }

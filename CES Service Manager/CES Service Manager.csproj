@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calls\Call_jenkins_plugins.cs" />
+    <Compile Include="Conf_ScriptsSettings_xml.cs" />
     <Compile Include="Conf_ServerSettings_xml.cs" />
     <Compile Include="Form_Main.cs">
       <SubType>Form</SubType>
@@ -77,6 +78,12 @@
     </Compile>
     <Compile Include="Form_Jenkins_PluginList.Designer.cs">
       <DependentUpon>Form_Jenkins_PluginList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ScriptsSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ScriptsSettings.Designer.cs">
+      <DependentUpon>Form_ScriptsSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_ServerSettings.cs">
       <SubType>Form</SubType>
@@ -94,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Jenkins_PluginList.resx">
       <DependentUpon>Form_Jenkins_PluginList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ScriptsSettings.resx">
+      <DependentUpon>Form_ScriptsSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ServerSettings.resx">
       <DependentUpon>Form_ServerSettings.cs</DependentUpon>

@@ -40,15 +40,29 @@ namespace CES_Service_Manager
                 using (var sshclient = new SshClient(ConnInfo))
                 {
                     sshclient.Connect();
-                    using (var cmd = sshclient.CreateCommand("python " + path + "jenkins_create_project.py " + projectName))
-                    {       
-                        
+                    //using (var cmd = sshclient.CreateCommand("python " + path + "jenkins_create_project.py " + projectName))
+                    //{       
+
+                    //    cmd.Execute();
+                    //    output = (cmd.Result);        
+
+                    //    string[] lines = { "python " + path + "jenkins_create_project.py " + projectName, cmd.Error, Convert.ToString(cmd.ExitStatus) };
+                    //    File.WriteAllLines(@"WriteLines.txt", lines);
+                    //}
+                    //sshclient.Disconnect();
+
+
+
+                    using (var cmd = sshclient.CreateCommand("python " + path + "jenkins_plugins.py"))
+                    {
                         cmd.Execute();
-                        output = (cmd.Result);
-                        string[] lines = { "python " + path + "jenkins_create_project.py " + projectName, cmd.Error, Convert.ToString(cmd.ExitStatus) };
-                        File.WriteAllLines(@"WriteLines.txt", lines);
+                        output = (cmd.Result).Replace("b'", "");
                     }
                     sshclient.Disconnect();
+
+
+
+
                 }
                 return output;
             }

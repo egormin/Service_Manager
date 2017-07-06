@@ -70,9 +70,11 @@ namespace CES_Service_Manager
             frm_Form_Jenkins_PluginList.ShowDialog();
         }
 
+        private Form_Jenkins_CreateProject frm_Jenkins_CreateProject;
         private void simpleButton4_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("This functionality has not been implemented yet");
+            frm_Jenkins_CreateProject = new Form_Jenkins_CreateProject();
+            frm_Jenkins_CreateProject.ShowDialog();
         }
 
         private Form_ScriptsSettings frm_ScriptsSettings;

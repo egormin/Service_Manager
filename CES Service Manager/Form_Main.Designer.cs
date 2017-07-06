@@ -41,10 +41,19 @@
             this.barButton_About = new DevExpress.XtraBars.BarButtonItem();
             this.Form_Main_barButtonItem_ScriptsSettings = new DevExpress.XtraBars.BarButtonItem();
             this.Form_Main_barButtonItem_ServerSettings = new DevExpress.XtraBars.BarButtonItem();
-            this.Top_Menu_File = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.Form_Main_barButtonItem_EnvironmentJenkins = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonGroup4 = new DevExpress.XtraBars.BarButtonGroup();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.Top_Menu_Settings = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup_Settings = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.Top_Menu_File = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.Top_Menu_About = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup_About_Info = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup_About_Help = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -85,15 +94,6 @@
             this.ribbonPageGroup_About = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.galleryDropDown1 = new DevExpress.XtraBars.Ribbon.GalleryDropDown(this.components);
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.Form_Main_barButtonItem_EnvironmentJenkins = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonGroup4 = new DevExpress.XtraBars.BarButtonGroup();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -219,17 +219,58 @@
             this.Form_Main_barButtonItem_ServerSettings.Name = "Form_Main_barButtonItem_ServerSettings";
             this.Form_Main_barButtonItem_ServerSettings.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Form_Main_barButtonItem_ServerSettings_ItemClick);
             // 
-            // Top_Menu_File
+            // Form_Main_barButtonItem_EnvironmentJenkins
             // 
-            this.Top_Menu_File.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup2});
-            this.Top_Menu_File.Name = "Top_Menu_File";
-            this.Top_Menu_File.Text = "Tools";
+            this.Form_Main_barButtonItem_EnvironmentJenkins.Caption = "Jenkins";
+            this.Form_Main_barButtonItem_EnvironmentJenkins.Glyph = ((System.Drawing.Image)(resources.GetObject("Form_Main_barButtonItem_EnvironmentJenkins.Glyph")));
+            this.Form_Main_barButtonItem_EnvironmentJenkins.Id = 15;
+            this.Form_Main_barButtonItem_EnvironmentJenkins.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("Form_Main_barButtonItem_EnvironmentJenkins.LargeGlyph")));
+            this.Form_Main_barButtonItem_EnvironmentJenkins.Name = "Form_Main_barButtonItem_EnvironmentJenkins";
+            this.Form_Main_barButtonItem_EnvironmentJenkins.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Form_Main_barButtonItem_EnvironmentJenkins_ItemClick);
             // 
-            // ribbonPageGroup2
+            // barButtonItem5
             // 
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "Engineering Tools";
+            this.barButtonItem5.Caption = "Gitlab";
+            this.barButtonItem5.Id = 16;
+            this.barButtonItem5.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.LargeGlyph")));
+            this.barButtonItem5.Name = "barButtonItem5";
+            // 
+            // barButtonGroup4
+            // 
+            this.barButtonGroup4.Caption = "barButtonGroup4";
+            this.barButtonGroup4.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.barButtonGroup4.Id = 17;
+            this.barButtonGroup4.ItemLinks.Add(this.Form_Main_barButtonItem_EnvironmentJenkins);
+            this.barButtonGroup4.ItemLinks.Add(this.barButtonItem5);
+            this.barButtonGroup4.Name = "barButtonGroup4";
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "Sonar";
+            this.barButtonItem6.Id = 18;
+            this.barButtonItem6.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.LargeGlyph")));
+            this.barButtonItem6.Name = "barButtonItem6";
+            // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.Caption = "Crucible";
+            this.barButtonItem7.Id = 19;
+            this.barButtonItem7.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.LargeGlyph")));
+            this.barButtonItem7.Name = "barButtonItem7";
+            // 
+            // barButtonItem8
+            // 
+            this.barButtonItem8.Caption = "Artifactory";
+            this.barButtonItem8.Id = 20;
+            this.barButtonItem8.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.LargeGlyph")));
+            this.barButtonItem8.Name = "barButtonItem8";
+            // 
+            // barButtonItem9
+            // 
+            this.barButtonItem9.Caption = "SVN";
+            this.barButtonItem9.Id = 21;
+            this.barButtonItem9.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.LargeGlyph")));
+            this.barButtonItem9.Name = "barButtonItem9";
             // 
             // Top_Menu_Settings
             // 
@@ -245,6 +286,37 @@
             this.ribbonPageGroup_Settings.ItemLinks.Add(this.Form_Main_barButtonItem_ScriptsSettings);
             this.ribbonPageGroup_Settings.Name = "ribbonPageGroup_Settings";
             this.ribbonPageGroup_Settings.Text = "Server Settings";
+            // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1});
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "Environment";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.AllowTextClipping = false;
+            this.ribbonPageGroup1.ItemLinks.Add(this.Form_Main_barButtonItem_EnvironmentJenkins);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem8);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem9);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Environment configuration";
+            // 
+            // Top_Menu_File
+            // 
+            this.Top_Menu_File.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup2});
+            this.Top_Menu_File.Name = "Top_Menu_File";
+            this.Top_Menu_File.Text = "Tools";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "Engineering Tools";
             // 
             // Top_Menu_About
             // 
@@ -597,78 +669,6 @@
             // 
             this.galleryDropDown1.Name = "galleryDropDown1";
             this.galleryDropDown1.Ribbon = this.ribbonControl1;
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Environment";
-            // 
-            // Form_Main_barButtonItem_EnvironmentJenkins
-            // 
-            this.Form_Main_barButtonItem_EnvironmentJenkins.Caption = "Jenkins";
-            this.Form_Main_barButtonItem_EnvironmentJenkins.Glyph = ((System.Drawing.Image)(resources.GetObject("Form_Main_barButtonItem_EnvironmentJenkins.Glyph")));
-            this.Form_Main_barButtonItem_EnvironmentJenkins.Id = 15;
-            this.Form_Main_barButtonItem_EnvironmentJenkins.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("Form_Main_barButtonItem_EnvironmentJenkins.LargeGlyph")));
-            this.Form_Main_barButtonItem_EnvironmentJenkins.Name = "Form_Main_barButtonItem_EnvironmentJenkins";
-            this.Form_Main_barButtonItem_EnvironmentJenkins.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Form_Main_barButtonItem_EnvironmentJenkins_ItemClick);
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.AllowTextClipping = false;
-            this.ribbonPageGroup1.ItemLinks.Add(this.Form_Main_barButtonItem_EnvironmentJenkins);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem5);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem6);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem7);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem8);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem9);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Environment configuration";
-            // 
-            // barButtonItem5
-            // 
-            this.barButtonItem5.Caption = "Gitlab";
-            this.barButtonItem5.Id = 16;
-            this.barButtonItem5.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.LargeGlyph")));
-            this.barButtonItem5.Name = "barButtonItem5";
-            // 
-            // barButtonGroup4
-            // 
-            this.barButtonGroup4.Caption = "barButtonGroup4";
-            this.barButtonGroup4.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.barButtonGroup4.Id = 17;
-            this.barButtonGroup4.ItemLinks.Add(this.Form_Main_barButtonItem_EnvironmentJenkins);
-            this.barButtonGroup4.ItemLinks.Add(this.barButtonItem5);
-            this.barButtonGroup4.Name = "barButtonGroup4";
-            // 
-            // barButtonItem6
-            // 
-            this.barButtonItem6.Caption = "Sonar";
-            this.barButtonItem6.Id = 18;
-            this.barButtonItem6.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.LargeGlyph")));
-            this.barButtonItem6.Name = "barButtonItem6";
-            // 
-            // barButtonItem7
-            // 
-            this.barButtonItem7.Caption = "Crucible";
-            this.barButtonItem7.Id = 19;
-            this.barButtonItem7.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.LargeGlyph")));
-            this.barButtonItem7.Name = "barButtonItem7";
-            // 
-            // barButtonItem8
-            // 
-            this.barButtonItem8.Caption = "Artifactory";
-            this.barButtonItem8.Id = 20;
-            this.barButtonItem8.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.LargeGlyph")));
-            this.barButtonItem8.Name = "barButtonItem8";
-            // 
-            // barButtonItem9
-            // 
-            this.barButtonItem9.Caption = "SVN";
-            this.barButtonItem9.Id = 21;
-            this.barButtonItem9.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.LargeGlyph")));
-            this.barButtonItem9.Name = "barButtonItem9";
             // 
             // Form_Main
             // 

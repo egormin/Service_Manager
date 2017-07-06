@@ -2,6 +2,6 @@
 <RemoteServerConfiguration>
   <IP>192.168.138.13</IP>
   <Port>22</Port>
-  <User>egor</User>
+  <User>admin</User>
   <KeyPath>D:\keys\eg_priv_os.ppk</KeyPath>
 </RemoteServerConfiguration>

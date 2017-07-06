@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Renci.SshNet;
+using System.IO;
 
 namespace CES_Service_Manager
 {
@@ -41,6 +42,12 @@ namespace CES_Service_Manager
                     sshclient.Connect();
                     using (var cmd = sshclient.CreateCommand("python " + path + "jenkins_create_project.py " + projectName))
                     {
+                        string[] lines = { "python " + path + "jenkins_create_project.py " + projectName, "Second line", "Third line" };
+                      
+                        File.WriteAllLines(@"WriteLines.txt", lines);
+
+
+
                         cmd.Execute();
                         output = (cmd.Result);
                     }

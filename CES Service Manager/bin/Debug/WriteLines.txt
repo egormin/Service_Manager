@@ -1,11 +1,10 @@
-python /home/admin/csm/jenkins_create_project.py ryh
+python /home/admin/csm/jenkins_create_project.py h
 
 0
-anaconda-ks.cfg
-original-ks.cfg
-/root
-AutomationServer
-uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
-Python 3.5.2
-3.5.2 (set by /root/.pyenv/version)
+XXX-ZZZ
+creating folder done
+creating role... done
+creating role assignment... done
+ALL DONE
+Finished
 

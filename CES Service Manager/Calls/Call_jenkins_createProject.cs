@@ -36,21 +36,23 @@ namespace CES_Service_Manager
                    {  // Key Based Authentication (using keys in OpenSSH Format)
                            new PrivateKeyFile(@"" + key + "","passphrase") }),});
 
-                string output;
+                string output = "";
                 using (var sshclient = new SshClient(ConnInfo))
                 {
                     sshclient.Connect();
-                      using (var cmd = sshclient.CreateCommand("python " + path + "jenkins_create_project.py " + projectName))      
-                   // using (var cmd = sshclient.CreateCommand("ls;pwd;hostname;id;python -V;pyenv version;"))
+                     using (var cmd = sshclient.CreateCommand("python " + path + "jenkins_create_project.py " + projectName))                    
                     {
-                        cmd.Execute();
-                        output = (cmd.Result);
+                        cmd.Execute();       
+                        string[] stepsArray = (cmd.Result).Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);                     
 
-                        string[] lines = { "python " + path + "jenkins_create_project.py " + projectName, cmd.Error, Convert.ToString(cmd.ExitStatus), output };
-                        File.WriteAllLines(@"WriteLines.txt", lines);
+                        for (int i = 0; i < stepsArray.Length; i++)
+                        {
+                            output += stepsArray[i] + "\r\n";
+                        }
+                      //  string[] lines = { "python " + path + "jenkins_create_project.py " + projectName, cmd.Error, Convert.ToString(cmd.ExitStatus), output };
+                       // File.WriteAllLines(@"WriteLines.txt", lines);
                     }
                     sshclient.Disconnect();
-
                 }
                 return output;
             }

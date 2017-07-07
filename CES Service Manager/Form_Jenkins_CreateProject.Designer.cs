@@ -83,6 +83,8 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.textBox1.Location = new System.Drawing.Point(13, 120);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";

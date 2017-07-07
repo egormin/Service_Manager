@@ -78,7 +78,11 @@ namespace CES_Service_Manager
                 plugin_array[i] = plugin_array[i].Remove(0, plugin_id.Length);
                 string[] each_plugin = plugin_array[i].Split(new string[] { "  " }, StringSplitOptions.RemoveEmptyEntries);
 
-                if (each_plugin.Length == 2)
+                if ((each_plugin.Length == 0)) //in case of empty row
+                {
+                    continue;
+                }
+                else if (each_plugin.Length == 2)
                 {
                     plugin_name = each_plugin[0];
                     plugin_version = each_plugin[1];

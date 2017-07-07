@@ -41,7 +41,7 @@ namespace CES_Service_Manager
                 {
                     sshclient.Connect();
                     //  using (var cmd = sshclient.CreateCommand("python " + path + "jenkins_create_project.py " + projectName))      
-                    using (var cmd = sshclient.CreateCommand("ls;pwd;hostname;"))
+                    using (var cmd = sshclient.CreateCommand("ls;pwd;hostname;id;python -V;pyenv version;"))
                     {
                         cmd.Execute();
                         output = (cmd.Result);

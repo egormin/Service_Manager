@@ -49,8 +49,6 @@ namespace CES_Service_Manager
                         {
                             output += stepsArray[i] + "\r\n";
                         }
-                      //  string[] lines = { "python " + path + "jenkins_create_project.py " + projectName, cmd.Error, Convert.ToString(cmd.ExitStatus), output };
-                       // File.WriteAllLines(@"WriteLines.txt", lines);
                     }
                     sshclient.Disconnect();
                 }

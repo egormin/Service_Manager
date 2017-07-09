@@ -32,6 +32,12 @@ namespace CES_Service_Manager
 
             textEdit_Form_EnvironmentJenkins_JenkinsName.Click += new EventHandler(textEdit_Form_EnvironmentJenkins_JenkinsName_Click);
             textEdit_Form_EnvironmentJenkins_Link.Click += new EventHandler(textEdit_Form_EnvironmentJenkins_Link_Click);
+
+
+            // item1.Description = "Hide Button";
+            //radioGroup1.it
+            // radioGroup1 item1 = new RadioGroupItem();
+            //item1.Description = "Hide Button";
         }
 
 

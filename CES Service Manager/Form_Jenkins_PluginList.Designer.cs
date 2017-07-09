@@ -32,10 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Jenkins_PluginList));
             this.gridControl_Form_Jenkins_PluginList = new DevExpress.XtraGrid.GridControl();
             this.gridView_Form_Jenkins_PluginList = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.simpleButton1_Form_Jenkins_PluginList = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1_Form_Jenkins_Refresh = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl_Form_Jenkins_PluginList = new DevExpress.XtraEditors.LabelControl();
+            this.comboBoxEdit_Form_Jenkins_ChooseServer = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_Form_Jenkins_PluginList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_Form_Jenkins_PluginList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_Form_Jenkins_ChooseServer.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl_Form_Jenkins_PluginList
@@ -57,17 +59,17 @@
             this.gridView_Form_Jenkins_PluginList.Name = "gridView_Form_Jenkins_PluginList";
             this.gridView_Form_Jenkins_PluginList.OptionsFind.AlwaysVisible = true;
             // 
-            // simpleButton1_Form_Jenkins_PluginList
+            // simpleButton1_Form_Jenkins_Refresh
             // 
-            this.simpleButton1_Form_Jenkins_PluginList.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.simpleButton1_Form_Jenkins_PluginList.Appearance.Options.UseFont = true;
-            this.simpleButton1_Form_Jenkins_PluginList.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1_Form_Jenkins_PluginList.Image")));
-            this.simpleButton1_Form_Jenkins_PluginList.Location = new System.Drawing.Point(565, 12);
-            this.simpleButton1_Form_Jenkins_PluginList.Name = "simpleButton1_Form_Jenkins_PluginList";
-            this.simpleButton1_Form_Jenkins_PluginList.Size = new System.Drawing.Size(99, 34);
-            this.simpleButton1_Form_Jenkins_PluginList.TabIndex = 1;
-            this.simpleButton1_Form_Jenkins_PluginList.Text = "Refresh";
-            this.simpleButton1_Form_Jenkins_PluginList.Click += new System.EventHandler(this.simpleButton1_Form_Jenkins_PluginList_Click);
+            this.simpleButton1_Form_Jenkins_Refresh.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.simpleButton1_Form_Jenkins_Refresh.Appearance.Options.UseFont = true;
+            this.simpleButton1_Form_Jenkins_Refresh.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1_Form_Jenkins_Refresh.Image")));
+            this.simpleButton1_Form_Jenkins_Refresh.Location = new System.Drawing.Point(565, 12);
+            this.simpleButton1_Form_Jenkins_Refresh.Name = "simpleButton1_Form_Jenkins_Refresh";
+            this.simpleButton1_Form_Jenkins_Refresh.Size = new System.Drawing.Size(99, 34);
+            this.simpleButton1_Form_Jenkins_Refresh.TabIndex = 1;
+            this.simpleButton1_Form_Jenkins_Refresh.Text = "Refresh";
+            this.simpleButton1_Form_Jenkins_Refresh.Click += new System.EventHandler(this.simpleButton1_Form_Jenkins_Refresh_Click);
             // 
             // labelControl_Form_Jenkins_PluginList
             // 
@@ -78,6 +80,18 @@
             this.labelControl_Form_Jenkins_PluginList.TabIndex = 2;
             this.labelControl_Form_Jenkins_PluginList.Text = "Jenkins Plugins List";
             // 
+            // comboBoxEdit_Form_Jenkins_ChooseServer
+            // 
+            this.comboBoxEdit_Form_Jenkins_ChooseServer.EditValue = "";
+            this.comboBoxEdit_Form_Jenkins_ChooseServer.Location = new System.Drawing.Point(289, 29);
+            this.comboBoxEdit_Form_Jenkins_ChooseServer.Name = "comboBoxEdit_Form_Jenkins_ChooseServer";
+            this.comboBoxEdit_Form_Jenkins_ChooseServer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit_Form_Jenkins_ChooseServer.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.comboBoxEdit_Form_Jenkins_ChooseServer.Size = new System.Drawing.Size(265, 20);
+            this.comboBoxEdit_Form_Jenkins_ChooseServer.TabIndex = 3;
+            this.comboBoxEdit_Form_Jenkins_ChooseServer.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit_Form_Jenkins_ChooseServer_Click);
+            // 
             // Form_Jenkins_PluginList
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -85,8 +99,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(676, 679);
+            this.Controls.Add(this.comboBoxEdit_Form_Jenkins_ChooseServer);
             this.Controls.Add(this.labelControl_Form_Jenkins_PluginList);
-            this.Controls.Add(this.simpleButton1_Form_Jenkins_PluginList);
+            this.Controls.Add(this.simpleButton1_Form_Jenkins_Refresh);
             this.Controls.Add(this.gridControl_Form_Jenkins_PluginList);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Jenkins_PluginList";
@@ -94,15 +109,17 @@
             this.Load += new System.EventHandler(this.Form_Jenkins_PluginList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_Form_Jenkins_PluginList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_Form_Jenkins_PluginList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_Form_Jenkins_ChooseServer.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private DevExpress.XtraEditors.SimpleButton simpleButton1_Form_Jenkins_PluginList;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1_Form_Jenkins_Refresh;
         public DevExpress.XtraGrid.GridControl gridControl_Form_Jenkins_PluginList;
         public DevExpress.XtraGrid.Views.Grid.GridView gridView_Form_Jenkins_PluginList;
         public DevExpress.XtraEditors.LabelControl labelControl_Form_Jenkins_PluginList;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit_Form_Jenkins_ChooseServer;
     }
 }

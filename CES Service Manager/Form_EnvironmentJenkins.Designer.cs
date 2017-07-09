@@ -44,9 +44,11 @@
             this.textEdit_Form_EnvironmentJenkins_JenkinsName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl_Form_EnvironmentJenkins_ConfiguredServers = new DevExpress.XtraEditors.LabelControl();
             this.labelControl_Form_EnvironmentJenkins_ServerList = new DevExpress.XtraEditors.LabelControl();
+            this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_Form_EnvironmentJenkins_Link.Properties)).BeginInit();
             this.panel_Form_EnvironmentJenkins_AddServer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_Form_EnvironmentJenkins_JenkinsName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // defaultLookAndFeel1
@@ -190,6 +192,13 @@
             this.labelControl_Form_EnvironmentJenkins_ServerList.Text = "list";
             this.labelControl_Form_EnvironmentJenkins_ServerList.Visible = false;
             // 
+            // radioGroup1
+            // 
+            this.radioGroup1.Location = new System.Drawing.Point(188, 13);
+            this.radioGroup1.Name = "radioGroup1";
+            this.radioGroup1.Size = new System.Drawing.Size(100, 96);
+            this.radioGroup1.TabIndex = 27;
+            // 
             // Form_EnvironmentJenkins
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -197,6 +206,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 366);
+            this.Controls.Add(this.radioGroup1);
             this.Controls.Add(this.labelControl_Form_EnvironmentJenkins_ServerList);
             this.Controls.Add(this.labelControl_Form_EnvironmentJenkins_ConfiguredServers);
             this.Controls.Add(this.panel_Form_EnvironmentJenkins_AddServer);
@@ -211,6 +221,7 @@
             this.panel_Form_EnvironmentJenkins_AddServer.ResumeLayout(false);
             this.panel_Form_EnvironmentJenkins_AddServer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_Form_EnvironmentJenkins_JenkinsName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,5 +243,6 @@
         public DevExpress.XtraEditors.TextEdit textEdit_Form_EnvironmentJenkins_JenkinsName;
         private DevExpress.XtraEditors.LabelControl labelControl_Form_EnvironmentJenkins_ConfiguredServers;
         private DevExpress.XtraEditors.LabelControl labelControl_Form_EnvironmentJenkins_ServerList;
+        private DevExpress.XtraEditors.RadioGroup radioGroup1;
     }
 }

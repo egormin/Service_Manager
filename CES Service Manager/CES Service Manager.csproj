@@ -66,9 +66,9 @@
   <ItemGroup>
     <Compile Include="Calls\Call_jenkins_plugins.cs" />
     <Compile Include="Calls\Call_jenkins_createProject.cs" />
-    <Compile Include="Conf_EnvironmentJenkins_xml.cs" />
-    <Compile Include="Conf_ScriptsSettings_xml.cs" />
-    <Compile Include="Conf_ServerSettings_xml.cs" />
+    <Compile Include="Configs\Conf_EnvironmentJenkins_xml.cs" />
+    <Compile Include="Configs\Conf_ScriptsSettings_xml.cs" />
+    <Compile Include="Configs\Conf_ServerSettings_xml.cs" />
     <Compile Include="Form_EnvironmentJenkins.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -1,0 +1,10 @@
+python /home/admin/csm/jenkins_create_project.py h
+
+0
+XXX-ZZZ
+creating folder done
+creating role... done
+creating role assignment... done
+ALL DONE
+Finished
+

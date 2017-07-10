@@ -32,13 +32,26 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>computer.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v16.1" />
     <Reference Include="DevExpress.Data.v16.1" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v16.1" />
     <Reference Include="DevExpress.Sparkline.v16.1.Core" />
     <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v16.1" />
+    <Reference Include="DevExpress.XtraGauges.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v16.1.Win, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Renci.SshNet">
+      <HintPath>..\..\..\ADDITIONAL_SW\Renci.SshNet.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,16 +64,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Calls\Call_jenkins_plugins.cs" />
+    <Compile Include="Calls\Call_jenkins_createProject.cs" />
+    <Compile Include="Calls\GetData_for_call.cs" />
+    <Compile Include="Configs\Conf_EnvironmentJenkins_xml.cs" />
+    <Compile Include="Configs\Conf_ScriptsSettings_xml.cs" />
+    <Compile Include="Configs\Conf_ServerSettings_xml.cs" />
+    <Compile Include="Form_EnvironmentJenkins.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form_EnvironmentJenkins.Designer.cs">
+      <DependentUpon>Form_EnvironmentJenkins.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Form_Jenkins_CreateProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Jenkins_CreateProject.Designer.cs">
+      <DependentUpon>Form_Jenkins_CreateProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Jenkins_PluginList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Jenkins_PluginList.Designer.cs">
+      <DependentUpon>Form_Jenkins_PluginList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ScriptsSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ScriptsSettings.Designer.cs">
+      <DependentUpon>Form_ScriptsSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ServerSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ServerSettings.Designer.cs">
+      <DependentUpon>Form_ServerSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageControls.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Set_TestConnection.cs" />
+    <Compile Include="Show_plugins_FillDatagrid.cs" />
+    <EmbeddedResource Include="Form_EnvironmentJenkins.resx">
+      <DependentUpon>Form_EnvironmentJenkins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Jenkins_CreateProject.resx">
+      <DependentUpon>Form_Jenkins_CreateProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Jenkins_PluginList.resx">
+      <DependentUpon>Form_Jenkins_PluginList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ScriptsSettings.resx">
+      <DependentUpon>Form_ScriptsSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ServerSettings.resx">
+      <DependentUpon>Form_ServerSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -81,6 +148,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="computer.ico" />
+    <Content Include="Naming Convention.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

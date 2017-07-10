@@ -54,7 +54,7 @@ namespace CES_Service_Manager
             var frm = GetForm<Form_Jenkins_PluginList>();
 
 
-            string output = Call_jenkins_plugins.Meth_Call_jenkins_plugins(serverName);
+            string output = Call_jenkins_plugins.Call(serverName);
             if (output == "NotFilledConf")
             {
                 MessageBox.Show("Please fill server config at first \n Settings -> Server Settings", "Server config not filled properly", MessageBoxButtons.OK, MessageBoxIcon.Error); return;

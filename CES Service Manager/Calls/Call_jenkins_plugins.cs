@@ -9,7 +9,7 @@ namespace CES_Service_Manager
 {
     class Call_jenkins_plugins
     {
-        public static string Meth_Call_jenkins_plugins(string serverName)
+        public static string Call(string serverName)
         {            
             //Load server config data from config file
             Conf_ServerSettings_xml inst_Conf_ServerSettings_xml = new Conf_ServerSettings_xml();
@@ -38,7 +38,6 @@ namespace CES_Service_Manager
                     using (var sshclient = new SshClient(ConnInfo))
                     {
                         sshclient.Connect();
-                      //  string server = GetData_for_call.GetHttp("Jenkins", serverName);
                         using (var cmd = sshclient.CreateCommand("python " + path + "jenkins_plugins.py "  + GetData_for_call.GetScriptPath() + " " + GetData_for_call.GetHttp("Jenkins", serverName)))
                         {
                             cmd.Execute();

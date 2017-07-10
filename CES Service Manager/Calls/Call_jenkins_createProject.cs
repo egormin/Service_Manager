@@ -10,7 +10,7 @@ namespace CES_Service_Manager
 {
     class Call_jenkins_createProject
     {
-        public static string Call(string projectName)
+        public static string Call(string projectName, string serverName)
         {
             //Load server config data from config file
             Conf_ServerSettings_xml inst_Conf_ServerSettings_xml = new Conf_ServerSettings_xml();
@@ -40,7 +40,7 @@ namespace CES_Service_Manager
                 using (var sshclient = new SshClient(ConnInfo))
                 {
                     sshclient.Connect();
-                     using (var cmd = sshclient.CreateCommand("python " + path + "jenkins_create_project.py " + projectName))                    
+                    using (var cmd = sshclient.CreateCommand("python " + path + "jenkins_create_project.py " + GetData_for_call.GetHttp("Jenkins", serverName) + " " + projectName))
                     {
                         cmd.Execute();       
                         string[] stepsArray = (cmd.Result).Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);                     

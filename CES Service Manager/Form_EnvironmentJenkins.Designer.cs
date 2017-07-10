@@ -170,11 +170,11 @@
             // 
             // labelControl_Form_EnvironmentJenkins_ConfiguredServers
             // 
-            this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.Location = new System.Drawing.Point(15, 24);
             this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.Name = "labelControl_Form_EnvironmentJenkins_ConfiguredServers";
-            this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.Size = new System.Drawing.Size(159, 19);
+            this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.Size = new System.Drawing.Size(148, 18);
             this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.TabIndex = 25;
             this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.Text = "Configured servers:";
             this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.Visible = false;

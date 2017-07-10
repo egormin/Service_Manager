@@ -51,6 +51,20 @@ labelControl_Form_Jenkins_PluginList
 simpleButton1_Form_Jenkins_PluginList
 
 
+**************** Form_Jenkins_CreateProject ****************
+
+labelControl_Form_Jenkins_CreateProject_ProjectName
+labelControl_Form_Jenkins_CreateProject_Result
+labelControl_Form_Jenkins_CreateProject_ChooseJenkins
+
+textEdit_Form_Jenkins_CreateProject_ProjectName
+textBox_Form_Jenkins_CreateProject_Result
+
+simpleButton_Form_Jenkins_CreateProject_CreateProject
+
+comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer
+
+
 
 
 CLASSES:

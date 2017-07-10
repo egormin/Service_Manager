@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_EnvironmentJenkins));
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
             this.textEdit_Form_EnvironmentJenkins_Link = new DevExpress.XtraEditors.TextEdit();
             this.labelControl_Form_EnvironmentJenkins_Link = new DevExpress.XtraEditors.LabelControl();
             this.labelControl_Form_ServerSettings_SaveSettings = new DevExpress.XtraEditors.LabelControl();
@@ -98,7 +97,7 @@
             // 
             this.labelControl_Form_EnvironmentJenkins_NoServers.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.labelControl_Form_EnvironmentJenkins_NoServers.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl_Form_EnvironmentJenkins_NoServers.Location = new System.Drawing.Point(15, 24);
+            this.labelControl_Form_EnvironmentJenkins_NoServers.Location = new System.Drawing.Point(15, 63);
             this.labelControl_Form_EnvironmentJenkins_NoServers.Name = "labelControl_Form_EnvironmentJenkins_NoServers";
             this.labelControl_Form_EnvironmentJenkins_NoServers.Size = new System.Drawing.Size(172, 13);
             this.labelControl_Form_EnvironmentJenkins_NoServers.TabIndex = 20;
@@ -107,7 +106,7 @@
             // simpleButton_Form_EnvironmentJenkins_AddServer
             // 
             this.simpleButton_Form_EnvironmentJenkins_AddServer.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton_Form_EnvironmentJenkins_AddServer.Image")));
-            this.simpleButton_Form_EnvironmentJenkins_AddServer.Location = new System.Drawing.Point(17, 119);
+            this.simpleButton_Form_EnvironmentJenkins_AddServer.Location = new System.Drawing.Point(13, 25);
             this.simpleButton_Form_EnvironmentJenkins_AddServer.Name = "simpleButton_Form_EnvironmentJenkins_AddServer";
             this.simpleButton_Form_EnvironmentJenkins_AddServer.Size = new System.Drawing.Size(119, 23);
             this.simpleButton_Form_EnvironmentJenkins_AddServer.TabIndex = 21;
@@ -117,7 +116,7 @@
             // simpleButton_Form_EnvironmentJenkins_RemoveServer
             // 
             this.simpleButton_Form_EnvironmentJenkins_RemoveServer.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton_Form_EnvironmentJenkins_RemoveServer.Image")));
-            this.simpleButton_Form_EnvironmentJenkins_RemoveServer.Location = new System.Drawing.Point(170, 119);
+            this.simpleButton_Form_EnvironmentJenkins_RemoveServer.Location = new System.Drawing.Point(166, 25);
             this.simpleButton_Form_EnvironmentJenkins_RemoveServer.Name = "simpleButton_Form_EnvironmentJenkins_RemoveServer";
             this.simpleButton_Form_EnvironmentJenkins_RemoveServer.Size = new System.Drawing.Size(119, 23);
             this.simpleButton_Form_EnvironmentJenkins_RemoveServer.TabIndex = 22;
@@ -126,7 +125,7 @@
             // simpleButton_Form_EnvironmentJenkins_ModifyServer
             // 
             this.simpleButton_Form_EnvironmentJenkins_ModifyServer.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton_Form_EnvironmentJenkins_ModifyServer.Image")));
-            this.simpleButton_Form_EnvironmentJenkins_ModifyServer.Location = new System.Drawing.Point(319, 119);
+            this.simpleButton_Form_EnvironmentJenkins_ModifyServer.Location = new System.Drawing.Point(315, 25);
             this.simpleButton_Form_EnvironmentJenkins_ModifyServer.Name = "simpleButton_Form_EnvironmentJenkins_ModifyServer";
             this.simpleButton_Form_EnvironmentJenkins_ModifyServer.Size = new System.Drawing.Size(119, 23);
             this.simpleButton_Form_EnvironmentJenkins_ModifyServer.TabIndex = 23;
@@ -172,7 +171,7 @@
             // 
             this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.Location = new System.Drawing.Point(15, 24);
+            this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.Location = new System.Drawing.Point(15, 63);
             this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.Name = "labelControl_Form_EnvironmentJenkins_ConfiguredServers";
             this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.Size = new System.Drawing.Size(148, 18);
             this.labelControl_Form_EnvironmentJenkins_ConfiguredServers.TabIndex = 25;
@@ -183,7 +182,7 @@
             // 
             this.labelControl_Form_EnvironmentJenkins_ServerList.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelControl_Form_EnvironmentJenkins_ServerList.Appearance.ForeColor = System.Drawing.Color.LimeGreen;
-            this.labelControl_Form_EnvironmentJenkins_ServerList.Location = new System.Drawing.Point(15, 45);
+            this.labelControl_Form_EnvironmentJenkins_ServerList.Location = new System.Drawing.Point(15, 84);
             this.labelControl_Form_EnvironmentJenkins_ServerList.Name = "labelControl_Form_EnvironmentJenkins_ServerList";
             this.labelControl_Form_EnvironmentJenkins_ServerList.Size = new System.Drawing.Size(19, 16);
             this.labelControl_Form_EnvironmentJenkins_ServerList.TabIndex = 26;

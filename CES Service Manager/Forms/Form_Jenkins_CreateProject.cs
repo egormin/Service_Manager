@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace CES_Service_Manager
 {
@@ -57,13 +58,18 @@ namespace CES_Service_Manager
             {
                 MessageBox.Show("Project name not specified", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-          
+            hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject.Visible = true;
         }
 
         private void comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer_Click(object sender, EventArgs e)
         {
             textBox_Form_Jenkins_CreateProject_Result.Text = "";
             textEdit_Form_Jenkins_CreateProject_ProjectName.Text = "";
+        }
+       
+        private void hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject_Click(object sender, EventArgs e)
+        {
+            Process.Start(GetData_for_call.GetHttp("Jenkins", comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer.Text) + "/job/" + textEdit_Form_Jenkins_CreateProject_ProjectName.Text);
         }
     }
 }

@@ -1,6 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Jenkins>
-  <JenkinsHyderabad>
-    <httpLink>https://jenkinshyd.epam.com</httpLink>
-  </JenkinsHyderabad>
-</Jenkins>
+﻿<?xml version="1.0" encoding="utf-8"?><Jenkins />

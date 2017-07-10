@@ -64,6 +64,8 @@ simpleButton_Form_Jenkins_CreateProject_CreateProject
 
 comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer
 
+hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject
+
 
 
 

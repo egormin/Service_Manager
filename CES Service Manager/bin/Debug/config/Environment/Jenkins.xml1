@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Jenkins>
+  <JenkinsMinsk>
+    <httpLink>http://jenkins.epam.com</httpLink>
+  </JenkinsMinsk>
+  <Myjenkins>
+    <httpLink>http://192.168.138.200:8080</httpLink>
+  </Myjenkins>
+</Jenkins>

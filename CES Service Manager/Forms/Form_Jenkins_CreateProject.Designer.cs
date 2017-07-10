@@ -104,6 +104,7 @@
             this.comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer.Size = new System.Drawing.Size(265, 20);
             this.comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer.TabIndex = 10;
+            this.comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer_Click);
             // 
             // labelControl_Form_Jenkins_CreateProject_ChooseJenkins
             // 

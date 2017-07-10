@@ -127,6 +127,8 @@
             this.hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject.Size = new System.Drawing.Size(75, 13);
             this.hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject.TabIndex = 12;
             this.hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject.Text = "Open Project...";
+            this.hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject.Visible = false;
+            this.hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject.Click += new System.EventHandler(this.hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject_Click);
             // 
             // Form_Jenkins_CreateProject
             // 

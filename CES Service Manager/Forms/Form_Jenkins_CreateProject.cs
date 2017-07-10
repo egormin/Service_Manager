@@ -69,7 +69,7 @@ namespace CES_Service_Manager
        
         private void hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject_Click(object sender, EventArgs e)
         {
-            Process.Start(GetData_for_call.GetHttp("Jenkins", comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer.Text) + "/" + textEdit_Form_Jenkins_CreateProject_ProjectName.Text);
+            Process.Start(GetData_for_call.GetHttp("Jenkins", comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer.Text) + "/job/" + textEdit_Form_Jenkins_CreateProject_ProjectName.Text);
         }
     }
 }

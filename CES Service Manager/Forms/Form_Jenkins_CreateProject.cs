@@ -45,7 +45,7 @@ namespace CES_Service_Manager
                 if (comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer.Text!="")
                 {
                     textBox_Form_Jenkins_CreateProject_Result.Text = "Jenkins: " + comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer.Text + "\r\n" + "Project: " +
-                        textEdit_Form_Jenkins_CreateProject_ProjectName.Text + "\n\r" +
+                        textEdit_Form_Jenkins_CreateProject_ProjectName.Text + "\r\n" + "\r\n" +
                         Call_jenkins_createProject.Call(textEdit_Form_Jenkins_CreateProject_ProjectName.Text, comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer.Text);
                 }
                 else

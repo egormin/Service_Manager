@@ -38,6 +38,7 @@
             this.textBox_Form_Jenkins_CreateProject_Result = new System.Windows.Forms.TextBox();
             this.comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl_Form_Jenkins_CreateProject_ChooseJenkins = new DevExpress.XtraEditors.LabelControl();
+            this.hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject = new DevExpress.XtraEditors.HyperlinkLabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_Form_Jenkins_CreateProject_ProjectName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer.Properties)).BeginInit();
             this.SuspendLayout();
@@ -117,6 +118,16 @@
             this.labelControl_Form_Jenkins_CreateProject_ChooseJenkins.TabIndex = 11;
             this.labelControl_Form_Jenkins_CreateProject_ChooseJenkins.Text = "Choose Jenkins";
             // 
+            // hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject
+            // 
+            this.hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject.Appearance.ForeColor = System.Drawing.Color.Navy;
+            this.hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject.Location = new System.Drawing.Point(21, 236);
+            this.hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject.Name = "hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject";
+            this.hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject.Size = new System.Drawing.Size(75, 13);
+            this.hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject.TabIndex = 12;
+            this.hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject.Text = "Open Project...";
+            // 
             // Form_Jenkins_CreateProject
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -124,6 +135,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 273);
+            this.Controls.Add(this.hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject);
             this.Controls.Add(this.labelControl_Form_Jenkins_CreateProject_ChooseJenkins);
             this.Controls.Add(this.comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer);
             this.Controls.Add(this.textBox_Form_Jenkins_CreateProject_Result);
@@ -152,5 +164,6 @@
         private System.Windows.Forms.TextBox textBox_Form_Jenkins_CreateProject_Result;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer;
         private DevExpress.XtraEditors.LabelControl labelControl_Form_Jenkins_CreateProject_ChooseJenkins;
+        private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelControl_Form_Jenkins_CreateProject_OpenProject;
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Jenkins_CreateProject));
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.textEdit_Form_Jenkins_CreateProject_ProjectName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl_Form_Jenkins_CreateProject_ProjectName = new DevExpress.XtraEditors.LabelControl();
@@ -130,8 +131,9 @@
             this.Controls.Add(this.simpleButton_Form_Jenkins_CreateProject_CreateProject);
             this.Controls.Add(this.textEdit_Form_Jenkins_CreateProject_ProjectName);
             this.Controls.Add(this.labelControl_Form_Jenkins_CreateProject_ProjectName);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Jenkins_CreateProject";
-            this.Text = "Form_JenkinsCreateProject";
+            this.Text = "Create Jenkins Project";
             this.Load += new System.EventHandler(this.Form_Jenkins_CreateProject_Load);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_Form_Jenkins_CreateProject_ProjectName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit_Form_Jenkins_CreateProject_ChooseServer.Properties)).EndInit();
